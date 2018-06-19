@@ -148,3 +148,6 @@ blockquote:after {
         grid-area: clientwords;
     }
 }
+.slick-dots li {
+    display: none;
+}
