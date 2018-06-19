@@ -1,0 +1,175 @@
+/* need to add normalize or reset */
+
+* {
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'Questrial', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 24px;
+}
+
+h3 {
+    font-size:22px;
+}
+
+#headshot {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.link {
+    text-decoration: none;
+    color: grey;
+}
+
+img {
+    padding: 4px;
+}
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right:  auto;
+    text-align: center;
+    padding: 0 5%;
+}
+
+#notepad {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    width: 350px;
+    height: 300px;
+}
+
+.photo_carousel {
+    padding: 12px;
+}
+
+#about_container {
+    border:4px solid green;
+}
+
+#who {
+    border:2px solid blue;
+}
+
+#what {
+    border:2px solid palevioletred
+}
+
+#why {
+    border: 2px solid yellow
+}
+
+blockquote {
+    padding: 8px;
+    background-color: #faebbc;
+    border-top: 1px solid #e1cc89;
+    border-bottom: 1px solid #e1cc89;
+    margin: 1% 10%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    text-indent: 23px;
+}
+
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+
+.stack_container {
+    border: 2px solid black;
+    display: grid;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "serverwords"
+    "clientwords"
+    "otherwords"
+}
+
+.serverwords {
+    background-color: pink;
+    grid-area: serverwords;
+}
+
+.otherwords {
+    background-color: grey;
+    grid-area: otherwords;
+}
+
+.clientwords {
+    background-color: aqua;
+    grid-area: clientwords;
+}
+
+@media only screen and (min-width : 739px) {
+    .stack_container {
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "serverwords   otherwords  clientwords"
+}
+
+    .serverwords {
+        background-color: pink;
+        grid-area: serverwords;
+    }
+
+    .otherwords {
+        background-color: grey;
+        grid-area: otherwords;
+    }
+
+    .clientwords {
+        background-color: aqua;
+        grid-area: clientwords;
+    }
+}
+
+
+.accordion {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
