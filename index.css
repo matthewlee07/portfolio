@@ -57,6 +57,7 @@ p {
 
 #about_container {
     border:4px solid green;
+    padding: 1%;
 }
 
 #who {
