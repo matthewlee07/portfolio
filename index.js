@@ -1,10 +1,10 @@
 $(document).ready(function () {
     let autoplaySpeed;
-    if ($(window).width() > 739) {
-        autoplaySpeed = 4000;
+    if ($(window).width() > 480) {
+        autoplaySpeed = 4500;
     }
     else {
-        autoplaySpeed = 1700;
+        autoplaySpeed = 2000;
     }
 
     $('.photo_carousel').slick({
