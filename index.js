@@ -1,4 +1,10 @@
 $(document).ready(function () {
+    const images = ["./photos/scuba-diver.jpg", "./photos/flying.jpg"]
+    for (i = 0; i < images.length; i++) {
+        let currentImage = new Image();
+        currentImage.src = images[i];
+    }
+
     let autoplaySpeed;
     if ($(window).width() > 480) {
         autoplaySpeed = 4500;
