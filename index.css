@@ -16,11 +16,12 @@ h1 {
 .app-adj {
     font-size: 50px;
     display: inline;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Roboto+Slab', cursive;
 }
 
-h2 {
-    font-family: 'Spirax', cursive;
+.accordion-section-title {
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Tajawal', sans-serif;
     font-size: 24px;
 }
 
@@ -93,18 +94,19 @@ blockquote:after {
 }
 
 .serverwords {
-    background-color: pink;
     grid-area: serverwords;
 }
 
 .otherwords {
-    background-color: grey;
     grid-area: otherwords;
 }
 
 .clientwords {
-    background-color: aqua;
     grid-area: clientwords;
+}
+
+.skillwords {
+    height: 200px
 }
 
 @media only screen and (min-width : 480px) {
@@ -124,18 +126,19 @@ blockquote:after {
 }
 
     .serverwords {
-        background-color: pink;
         grid-area: serverwords;
     }
 
     .otherwords {
-        background-color: grey;
         grid-area: otherwords;
     }
 
     .clientwords {
-        background-color: aqua;
         grid-area: clientwords;
+    }
+
+    .skillwords {
+        height: 250px
     }
 }
 .slick-dots li {
