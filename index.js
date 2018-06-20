@@ -40,4 +40,13 @@ $(document).ready(function () {
 
         ]
     });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('#nav-bar').fadeIn(200);
+            $('#nav-bar').css('display', 'flex');
+        } else {
+            $('#nav-bar').fadeOut(200);
+        }
+    });
 });

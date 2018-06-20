@@ -9,6 +9,10 @@
     font-family: 'Questrial', sans-serif;
 }
 
+h1 {
+    line-height: 50px;
+}
+
 .app-adj {
     font-size: 50px;
     display: inline;
