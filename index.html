@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link font awesome -->
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Questrial" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Questrial+Spirax" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
-    <!-- jquery -->
+
     <title>Matt Lee's Portfolio</title>
 </head>
 
@@ -17,34 +19,47 @@
     <nav class="nav-bar" id="nav-bar">
         <h1 class="name-nav">Matt Lee</h1>
         <ul class="contact-nav">
-            <li class="contact-link contact-link-github">
+            <li>
                 <a target="_blank" href="https://www.github.com/matthewlee07">
-                    <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a>
+                    <i class="fa fa-github-square" aria-hidden="true"></i></a>
             </li>
-            <li class="contact-link contact-link-linkedin">
-                <a target="_blank" href="https://www.linkedin.com/in/matthew-lee-64978129">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+            <li>
+                <a target="_blank" href="www.linkedin.com/in/dev-matt-lee">
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
             </li>
-            <li class="contact-link contact-link-email">
+            <li>
                 <a target="_blank" href="mailto:thematthewalee@gmail.com" class="email-link">
-                    <i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+                    <i class="fa fa-envelope" aria-hidden="true"></i></a>
             </li>
         </ul>
     </nav>
 
     <header id="header">
+        <div class="col contact">
+            <h1>Hi! I'm Matt </br>a full-stack developer</br>in Columbus, Ohio</h1>
+            <nav class="contact-links">
+                <ul>
+                    <li>
+                        <a target="_blank" href="https://www.github.com/matthewlee07">
+                            <i class="fa fa-github" aria-hidden="true"></i> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="www.linkedin.com/in/dev-matt-lee">
+                            <i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="mailto:thematthewalee@gmail.com">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i> </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div id="intro_words">
-            <p>
-                Hello! I'm Matt,
-                <span>a/n</span>
-                <br>
-                <span>[adjective]</span> developer.
-            </p>
-            <p>
-                I design and build
-                <br>
-                <span>[adjective]</span> web apps.
-            </p>
+
+            <p> I design and build </p>
+            <span class="js-app-adj app-adj"></span>
+
+            <p>web apps.</p>
         </div>
         <img id="headshot" src="./headshot/headshot.jpg">
     </header>
@@ -66,40 +81,40 @@
         </section>
 
         <section id="what">
-            <h2>Life Unplugged</h2>
+            <h2>Unplugged</h2>
             <div class="photo_carousel">
                 <img src="./photos/scuba-diver.jpg" alt="Diving">
-                <img src="./photos/flying.jpg" alt="Flying" >
-                <img src="./photos/hiking.jpg" alt="Hiking" >
+                <img src="./photos/flying.jpg" alt="Flying">
+                <img src="./photos/hiking.jpg" alt="Hiking">
 
-                <img src="./photos/thailand-3.jpg" alt="Thailand" >
-                <img src="./photos/thailand-2.jpg" alt="Thailand" >
-                <img src="./photos/thailand-1.jpg" alt="Thailand" >
+                <img src="./photos/thailand-3.jpg" alt="Thailand">
+                <img src="./photos/thailand-2.jpg" alt="Thailand">
+                <img src="./photos/thailand-1.jpg" alt="Thailand">
 
-                <img src="./photos/zurich-2.jpg" alt="Zurich" >
-                <img src="./photos/zurich-3.jpg" alt="Zurich" >
-                <img src="./photos/zurich-1.jpg" alt="Zurich" >
+                <img src="./photos/zurich-2.jpg" alt="Zurich">
+                <img src="./photos/zurich-3.jpg" alt="Zurich">
+                <img src="./photos/zurich-1.jpg" alt="Zurich">
 
-                <img src="./photos/amsterdam-2.jpg" alt="" >
-                <img src="./photos/amsterdam-3.jpg" alt="" >
-                <img src="./photos/amsterdam-1.jpg" alt="" >
+                <img src="./photos/amsterdam-2.jpg" alt="">
+                <img src="./photos/amsterdam-3.jpg" alt="">
+                <img src="./photos/amsterdam-1.jpg" alt="">
 
                 <img src="./photos/abu-dhabi.jpg" alt="Abu Dhabi">
-                <img src="./photos/dubai-2.jpg" alt="Dubai" >
-                <img src="./photos/dubai-1.jpg" alt="Dubai" >
+                <img src="./photos/dubai-2.jpg" alt="Dubai">
+                <img src="./photos/dubai-1.jpg" alt="Dubai">
 
-                <img src="./photos/iceland-1.jpg" alt="Iceland" >
-                <img src="./photos/iceland-3.jpg" alt="Iceland" >
-                <img src="./photos/iceland-2.jpg" alt="Iceland" >
+                <img src="./photos/iceland-1.jpg" alt="Iceland">
+                <img src="./photos/iceland-3.jpg" alt="Iceland">
+                <img src="./photos/iceland-2.jpg" alt="Iceland">
 
-                <img src="./photos/new-zealand.jpg" alt="New Zealand" >
-                <img src="./photos/australia-1.jpg" alt="Australia" >
-                <img src="./photos/australia-2.jpg" alt="Australia" >
+                <img src="./photos/new-zealand.jpg" alt="New Zealand">
+                <img src="./photos/australia-1.jpg" alt="Australia">
+                <img src="./photos/australia-2.jpg" alt="Australia">
 
 
-                <img src="./photos/china-2.jpg" alt="China" >
-                <img src="./photos/myanmar.jpg" alt="" >
-                <img src="./photos/china-3.jpg" alt="China" >
+                <img src="./photos/china-2.jpg" alt="China">
+                <img src="./photos/myanmar.jpg" alt="">
+                <img src="./photos/china-3.jpg" alt="China">
             </div>
             <p>I love to travel! After college, I adventured for about 3 years, while operating my businesses remotely. I especially
                 enjoy hiking and scuba diving; fortunately, both are available in Ohio. I've always got my hands around a
@@ -108,7 +123,7 @@
             </p>
         </section>
         <section id="why">
-            <h2>Romance with Programming</h2>
+            <h2>Romance</h2>
             <p>I was a late bloomer. There was a matchmaker, Facebook Ads, who first introduced me to the appeal of programming.
                 It was an advertisement for one of the many programming bootcamps.
             </p>
@@ -131,7 +146,7 @@
         </section>
         <div id="stack">
             <div class="top">
-                <h2>Batman Utility Belt</h2>
+                <h2>Batman</h2>
                 <p>I full-stack web apps with Javascript, NodeJS, and Express. I use both SQL and nonSQL Databases as well as
                     Angular 2+ and React.</p>
             </div>
@@ -146,7 +161,7 @@
     </section>
 
     <section id="projects_container">
-        <h2>My Love</h2>
+        <h2>My Projects</h2>
         <div class="project_container"></div>
         <div class="project_container"></div>
         <div class="project_container"></div>
@@ -155,6 +170,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script async src="typed.js"></script>
 </body>
 
 </html>

@@ -7,16 +7,21 @@
     font-size: 18px;
     line-height: 32px;
     font-family: 'Questrial', sans-serif;
+}
 
+h1 {
+    line-height: 50px;
+}
+
+.app-adj {
+    font-size: 50px;
+    display: inline;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Spirax', cursive;
     font-size: 24px;
-}
-
-h3 {
-    font-size:22px;
 }
 
 #headshot {
@@ -42,34 +47,12 @@ p {
     padding: 0 5%;
 }
 
-#notepad {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    width: 350px;
-    height: 300px;
-}
-
 .photo_carousel {
     padding: 12px;
 }
 
 #about_container {
-    border:4px solid green;
     padding: 1%;
-}
-
-#who {
-    border:2px solid blue;
-}
-
-#what {
-    border:2px solid palevioletred
-}
-
-#why {
-    border: 2px solid yellow
 }
 
 blockquote {
@@ -101,7 +84,6 @@ blockquote:after {
 }
 
 .stack_container {
-    border: 2px solid black;
     display: grid;
     grid-auto-rows: 1fr 1fr 1fr;
     grid-template-areas:
@@ -135,7 +117,6 @@ blockquote:after {
 
 @media only screen and (min-width : 739px) {
     .stack_container {
-    border: 2px solid black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
