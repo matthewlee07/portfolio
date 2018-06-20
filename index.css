@@ -7,11 +7,16 @@
     font-size: 18px;
     line-height: 32px;
     font-family: 'Questrial', sans-serif;
+}
 
+.app-adj {
+    font-size: 50px;
+    display: inline;
+    font-family: 'Abril Fatface', cursive;
 }
 
 h2 {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Spirax', cursive;
     font-size: 24px;
 }
 
@@ -36,15 +41,6 @@ p {
     margin-right:  auto;
     text-align: center;
     padding: 0 5%;
-}
-
-#notepad {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
-    width: 350px;
-    height: 300px;
 }
 
 .photo_carousel {

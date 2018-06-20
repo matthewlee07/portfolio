@@ -462,15 +462,14 @@
     };
 
     $(function () {
-        $(".msg").typed({
+        $(".js-app-adj").typed({
             strings: [
-                "good<span class='punc'>.</span>",
-                " ^1000 goood<span class='punc'>.</span>",
-                " ^1000 goooood<span class='punc'>.</span>",
-                " ^1000 goooooooooood<span class='punc'>.</span>",
-                " ^1000 goooooooooooooooooooooood<span class='punc'>.</span>",
-                " ^1000 goooooooooooooooood<span class='punc'>.</span>",
-            ]
+                "functional", "mobile-first", "optimized", "reliable", "responsive", "scalable", "secure", "tested"
+            ],
+            typeSpeed: 50,
+            startDelay: 1000,
+            backSpeed: 50,
+            loop: true,
         });
     });
 
