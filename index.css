@@ -125,6 +125,14 @@ blockquote:after {
     grid-area: clientwords;
 }
 
+@media only screen and (min-width : 480px) {
+    #about_container {
+        padding: 1%;
+        margin: 5%
+    }
+}
+
+
 @media only screen and (min-width : 739px) {
     .stack_container {
     border: 2px solid black;
