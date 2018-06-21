@@ -129,7 +129,7 @@ blockquote:after {
 	width: 80%;
 	margin: auto;
 	padding: 10px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .project_box img {
