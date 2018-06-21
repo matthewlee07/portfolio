@@ -7,6 +7,7 @@
     font-size: 18px;
     line-height: 32px;
     font-family: 'Questrial', sans-serif;
+    border:2px solid red
 }
 
 h1 {
@@ -115,6 +116,28 @@ blockquote:after {
 .skillwords {
     height: 150px;
 }
+
+.project_container {
+    display: block;
+	margin: auto;
+	width: 850px;
+	padding-top: 20px;
+	font-size: 20px
+}
+
+.project_box {
+    display: inline-block;
+	width: 400px;
+	margin: auto;
+	padding: 10px;
+    border: 2px solid red;
+}
+
+.project_box img {
+    width: 100%
+}
+
+
 
 @media only screen and (min-width : 480px) {
 
