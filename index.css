@@ -21,13 +21,16 @@ h1 {
 
 h2 {
     font-family: 'Spirax', cursive;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 #headshot {
     width: 200px;
     border-radius: 50%;
+    margin-top: 40px;
 }
+
+
 
 .link {
     text-decoration: none;
@@ -53,6 +56,11 @@ p {
 
 #about_container {
     padding: 1%;
+}
+
+section {
+    padding: 2%;
+    border-top: 1px solid #1966D2;
 }
 
 blockquote {
@@ -93,29 +101,66 @@ blockquote:after {
 }
 
 .serverwords {
-    background-color: pink;
     grid-area: serverwords;
 }
 
 .otherwords {
-    background-color: grey;
     grid-area: otherwords;
 }
 
 .clientwords {
-    background-color: aqua;
     grid-area: clientwords;
 }
 
+.skillwords {
+    height: 150px;
+}
+
 @media only screen and (min-width : 480px) {
+
     #about_container {
         padding: 1%;
         margin: 5%
     }
+
+    .skillwords {
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width : 768px) {
+
+    #about_container {
+        padding: 1%;
+        margin: 5%
+    }
+
+    .skillwords {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    #about_container {
+        padding: 1%;
+        margin: 5%
+    }
+
+    .skillwords {
+        height: 300px;
+    }
 }
 
 
-@media only screen and (min-width : 739px) {
+@media only screen and (min-width : 1824px) {
+    h2{
+        font-size: 50px;
+    }
+
     .stack_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -124,18 +169,19 @@ blockquote:after {
 }
 
     .serverwords {
-        background-color: pink;
         grid-area: serverwords;
     }
 
     .otherwords {
-        background-color: grey;
         grid-area: otherwords;
     }
 
     .clientwords {
-        background-color: aqua;
         grid-area: clientwords;
+    }
+
+    .skillwords {
+        height: 350px;
     }
 }
 .slick-dots li {
