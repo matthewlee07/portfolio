@@ -30,7 +30,9 @@ h2 {
     margin-top: 40px;
 }
 
-
+.project_box a {
+    color:#1966D2
+}
 
 .link {
     text-decoration: none;
@@ -126,10 +128,10 @@ blockquote:after {
 
 .project_box {
     display: block;
-	width: 80%;
+    width: 80%;
 	margin: auto;
-	padding: 10px;
-    /* border: 2px solid red; */
+	padding: 2%;
+    margin-top: 20px;
 }
 
 .project_box img {
