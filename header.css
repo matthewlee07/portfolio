@@ -135,3 +135,43 @@ a {
 	flex: 1;
 	font-size: 20px;
 }
+
+/* technologies */
+
+.technologies-container {
+	width: 90%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.technologies-container {
+	width: 60%;
+}
+
+.technology-icon {
+	padding: 0;
+	border: 0;
+	width: 35px;
+	text-align: center;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 12px;
+}
+
+.technology-icon img {
+	height: 30px;
+}
+
+.technology-icon img {
+	height: 30px;
+}
+
+.technology-icon .image-text {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 10px;
+}

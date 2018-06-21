@@ -9,6 +9,10 @@
     font-family: 'Questrial', sans-serif;
 }
 
+header {
+    margin-top: 1%
+}
+
 h1 {
     line-height: 50px;
 }
