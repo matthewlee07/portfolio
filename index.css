@@ -119,8 +119,8 @@ blockquote:after {
     grid-area: clientwords;
 }
 
-.skillwords {
-    height: 150px;
+.black {
+    color:black;
 }
 
 .project_container {
@@ -268,4 +268,8 @@ blockquote:after {
 
 .slick-dots li {
     display: none;
+}
+
+.under-construction {
+    max-width: 200px;
 }
