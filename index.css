@@ -4,7 +4,7 @@
     text-align: center;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 32px;
     font-family: 'Questrial', sans-serif;
 }
@@ -34,13 +34,14 @@ h2 {
     margin-top: 40px;
 }
 
-.project_box a {
-    color:#1966D2
-}
 
 .link {
     text-decoration: none;
     color: grey;
+}
+
+#intro_words p{
+    font-size: 18px;
 }
 
 img {
@@ -131,6 +132,21 @@ blockquote:after {
 }
 
 .project_box {
+    /* border: 2px solid red; */
+}
+
+.project_box_image {
+    /* border: 2px solid blue; */
+}
+.project_box_about {
+    /* border: 2px solid yellow; */
+}
+
+.project_box a {
+    color:#1966D2
+}
+
+.project_box {
     display: block;
     width: 80%;
 	margin: auto;
@@ -138,11 +154,12 @@ blockquote:after {
     margin-top: 20px;
 }
 
-.project_box img {
-    width: 100%
+.project_box_image .screenshot {
+    width: 100%;
+    /* border: 6px solid black; */
 }
 
-.dim:hover {
+.screenshot:hover {
     filter: brightness(50%)
 }
 
@@ -156,6 +173,7 @@ blockquote:after {
     .skillwords {
         height: 100px;
     }
+
 }
 
 @media only screen and (min-width : 768px) {
@@ -171,6 +189,14 @@ blockquote:after {
 }
 
 @media only screen and (min-width : 1224px) {
+    * {
+        font-size: 18px;
+    }
+
+    #intro_words p{
+        font-size: 22px;
+    }
+
     h2 {
         font-size: 40px;
     }
@@ -183,9 +209,34 @@ blockquote:after {
     .skillwords {
         height: 300px;
     }
+
+
+    .project_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "project_box_image project_box_about";
+        grid-column-gap: 2%;
+    }
+
+        .project_box_image {
+            grid-area: project_box_image;
+        }
+
+        .project_box_about {
+            grid-area: project_box_about;
+        }
 }
 
 @media only screen and (min-width : 1824px) {
+    * {
+        font-size: 24px;
+    }
+
+    #intro_words p{
+        font-size: 28px;
+    }
+
     h2{
         font-size: 50px;
     }
@@ -213,6 +264,8 @@ blockquote:after {
         height: 350px;
     }
 }
+
+
 .slick-dots li {
     display: none;
 }
