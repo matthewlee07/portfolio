@@ -131,17 +131,6 @@ blockquote:after {
 	font-size: 20px
 }
 
-.project_box {
-    /* border: 2px solid red; */
-}
-
-.project_box_image {
-    /* border: 2px solid blue; */
-}
-.project_box_about {
-    /* border: 2px solid yellow; */
-}
-
 .project_box a {
     color:#1966D2
 }
@@ -157,6 +146,10 @@ blockquote:after {
 .project_box_image .screenshot {
     width: 100%;
     /* border: 6px solid black; */
+}
+
+.project_title {
+    color:#1966D2
 }
 
 .screenshot:hover {
