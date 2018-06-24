@@ -65,10 +65,10 @@ p {
     padding: 1%;
 }
 
-section {
+/* section {
     padding: 2%;
     border-top: 1px solid #1966D2;
-}
+} */
 
 blockquote {
     padding: 8px;
@@ -145,11 +145,16 @@ blockquote:after {
 
 .project_box_image .screenshot {
     width: 100%;
-    /* border: 6px solid black; */
 }
 
 .project_title {
     color:#1966D2
+}
+
+.project_improvements li {
+    list-style: none;
+    text-align: left;
+    line-height: 2em
 }
 
 .screenshot:hover {
@@ -208,7 +213,7 @@ blockquote:after {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
-        "project_box_image project_box_about";
+        "project_box_image project_box_info";
         grid-column-gap: 2%;
     }
 
@@ -216,8 +221,8 @@ blockquote:after {
             grid-area: project_box_image;
         }
 
-        .project_box_about {
-            grid-area: project_box_about;
+        .project_box_info {
+            grid-area: project_box_info;
         }
 }
 

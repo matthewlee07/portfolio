@@ -87,7 +87,7 @@
                 </div>
                 <div class="technology-icon">
                     <div class='tooltip'>
-                        <span class='tooltiptext'>JS ES6</span>
+                        <span class='tooltiptext'>ES6</span>
                         <img src="./logos/ES6.svg" alt="Javascript ES6 icon">
                     </div>
                 </div>
@@ -134,13 +134,14 @@
                 <a href="http://boardgame-binder-client.herokuapp.com/home" target="_blank">
                     <img src="./screenshots/BoardgameBinder.jpg" alt="Boardgame Binder screenshot" class="screenshot"> Live Demo
                     <span class="black">(Loads slowly, patience please)</span>
-                    </br>
                 </a>
-                <a href="https://github.com/matthewlee07/boardgameProfile" target="_blank">Server Code</a>
-                <span>|</span>
-                <a href="https://github.com/matthewlee07/BoardgameFinder-Client" target="_blank">Client Code</a>
-                <p>Additional technologies used:</p>
                 <div class="technologies-container">
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Angular 5+</span>
+                            <img src="./logos/angular.svg" alt="Angular icon">
+                        </div>
+                    </div>
                     <div class="technology-icon">
                         <div class='tooltip'>
                             <span class='tooltiptext'>SQLite</span>
@@ -165,18 +166,41 @@
                             <img src="./logos/aws-rds.svg" alt="AWS Relational Database Service icon">
                         </div>
                     </div>
-                    <div class="technology-icon">
-                        <div class='tooltip'>
-                            <span class='tooltiptext'>Angular 5+</span>
-                            <img src="./logos/angular.svg" alt="Angular icon">
-                        </div>
-                    </div>
+
                 </div>
+                <a href="https://github.com/matthewlee07/boardgameProfile" target="_blank">Server Code</a>
+                <span>|</span>
+                <a href="https://github.com/matthewlee07/BoardgameFinder-Client" target="_blank">Client Code</a>
             </div>
-            <div class="project_box_about">
-                <p>
-                    <span class="project_title">Boardgame Binder</span>
-                </p>
+            <div class="project_box_info">
+                <section class="project_about">
+                    <h3>How to use
+                        <span class="project_title">Boardgame Binder</span>:
+                    </h3>
+                    <p> Users search the library of nearly 10,000 games with filters such as title, number of players, and playing time.
+                        </br> After signing up for an account, users can record game experieces and share via social media.
+                    </p>
+                </section>
+                <section class="project_lessons">
+                    <h3>Lessons and difficulties:</h3>
+                    <p>
+                        The original board game data from
+                        <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite is not supported by Heroku. Dumped data into PostrgreSQL to be compatible. Discovered
+                        Heroku only supports up to 10k rows for free, whereas Boardgame Binder has over 90k rows. Migrated
+                        data to
+                        <a href="https://aws.amazon.com/rds/" target="_blank"> AWS Relational Database Service</a>. </br> Issues of development vs production environment - will use Docker in future projects.
+                    </p>
+                    <h3>Ongoing improvements:</h3>
+                    <ul class="project_improvements">
+                        <li>Unit Tests (Mocha, Chai, Jasmine, Karma etc).</li>
+                        <li>Loading screen (lots of slow responses due to free services).</li>
+                        <li>Real email, signup & social media integration.</li>
+                        <li>Instructions on landing page.</li>
+                        <li>Significant UI overhaul.</li>
+                    </ul>
+
+
+                </section>
             </div>
         </div>
 
@@ -196,8 +220,27 @@
                     </div>
                 </div>
             </div>
-            <div class="project_box_about">
-                <p>"about" "reflection"</p>
+            <div class="project_box_info">
+                <div class="project_box_info">
+                    <section class="project_about">
+                        <h3>How to use
+                            <span class="project_title">Find Your Film</span>:
+                        </h3>
+                        <p>Users search films by title (only). Click on movie poster to get more information.
+                        </p>
+                    </section>
+                    <section class="project_lessons">
+                        <h3>Lessons and difficulties:</h3>
+                        <p>Reading API documentation and creating CRUD operations for RESTful API
+                        </p>
+                        <h3>Ongoing improvements:</h3>
+                        <ul class="project_improvements">
+                            <li>Unit Tests.</li>
+                            <li>Clickable movie posters of Popular Movies on home page</li>
+                            <li>Moderate UI overhaul.</li>
+                        </ul>
+                    </section>
+                </div>
             </div>
 
         </div>
@@ -207,6 +250,18 @@
                 <!-- <a href=""> </a> -->
                 <p>Additional technologies used:</p>
                 <div class="technologies-container">
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>React</span>
+                            <img src="./logos/react.svg" alt="React icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Redux</span>
+                            <img src="./logos/redux.svg" alt="Redux icon">
+                        </div>
+                    </div>
                     <div class="technology-icon">
                         <div class='tooltip'>
                             <span class='tooltiptext'>Mongo</span>
@@ -225,28 +280,40 @@
                             <img src="./logos/mongoosejs.png" alt="Mongoose icon">
                         </div>
                     </div>
-                    <div class="technology-icon">
-                        <div class='tooltip'>
-                            <span class='tooltiptext'>React</span>
-                            <img src="./logos/react.svg" alt="React icon">
-                        </div>
-                    </div>
-                    <div class="technology-icon">
-                        <div class='tooltip'>
-                            <span class='tooltiptext'>Redux</span>
-                            <img src="./logos/redux.svg" alt="Redux icon">
-                        </div>
-                    </div>
+
                     <div class="technology-icon">
                         <div class='tooltip'>
                             <span class='tooltiptext'>Docker</span>
                             <img src="./logos/docker.svg" alt="Docker icon">
                         </div>
                     </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Netlify</span>
+                            <img src="./logos/netlify.svg" alt="Netlify icon">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="project_box_about">
-                <p>"about" "reflection"</p>
+            <div class="project_box_info">
+                <div class="project_box_info">
+                    <section class="project_about">
+                        <h3>
+                            <span class="project_title">Travel Battle</span> is currently being built
+                        </h3>
+                        <p> User submits request for propsal with travel details. Travel agents bid to fill travel request for
+                            lower price. </br> "Reverse eBay for travel"
+                        </p>
+                    </section>
+                    <section class="project_lessons">
+                        <h3>Lessons and difficulties:</h3>
+                        <p>
+                            In progress
+                        </p>
+                        <h3>Ongoing improvements:</h3>
+                        In progress
+                    </section>
+                </div>
             </div>
         </div>
     </div>
