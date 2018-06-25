@@ -213,6 +213,28 @@ a {
 .technology-icon:hover .tooltiptext {
 	visibility: visible;
 }
+
+@media only screen and (max-width : 360px) {
+	.technologies-container {
+		width: 100%;
+	}
+
+	.technology-icon {
+		padding: 0;
+		border: 0;
+		width: 20px;
+		text-align: center;
+		margin: 6px;
+		font-size: 12px;
+	}
+
+	.technology-icon img {
+		height: 30px;
+		width: 30px;
+	}
+
+}
+
 @media only screen and (min-width : 1224px) {
 	.technologies-container {
 		width: 100%;
