@@ -34,6 +34,13 @@ h2 {
     margin-top: 40px;
 }
 
+.landing_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 
 .link {
     text-decoration: none;
@@ -123,12 +130,20 @@ blockquote:after {
     color:black;
 }
 
+hr {
+    width: 60%;
+}
 .project_container {
     display: block;
 	margin: auto;
 	width: 850px;
 	padding-top: 20px;
 	font-size: 20px
+}
+
+.project_box_title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
 }
 
 .project_box a {
