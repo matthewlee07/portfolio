@@ -295,15 +295,25 @@ hr {
 
 @media only screen and (min-width : 1824px) {
     * {
-        font-size: 24px;
+        font-size: 36px;
+        line-height: 75px;
+    }
+
+    .contact h1 {
+        font-size: 75px;
+        line-height: 150px;
     }
 
     #intro_words p{
-        font-size: 28px;
+        font-size: 50px;
     }
 
-    h2{
-        font-size: 50px;
+    .app-adj {
+        font-size: 100px;
+    }
+
+    h2 {
+        font-size: 75px;
     }
 
     .stack_container {
