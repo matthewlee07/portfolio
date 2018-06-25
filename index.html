@@ -62,75 +62,76 @@
                 </nav>
             </div>
             <div id="intro_words">
-
                 <p> I design and build web apps which are: </p>
                 <span class="js-app-adj app-adj"></span>
             </div>
             <img id="headshot" src="./headshot/headshot.jpg">
+            <div id="base_technologies">
+                <p>Base technologies I use:</p>
+                <div class="technologies-container">
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>NodeJS</span>
+                            <img src="./logos/nodejs.svg" alt="NodeJS icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Express</span>
+                            <img src="./logos/express.svg" alt="Express icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>ES6</span>
+                            <img src="./logos/ES6.svg" alt="Javascript ES6 icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>HTML5</span>
+                            <img src="./logos/html5.svg" alt="HTML5 icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>CSS3</span>
+                            <img src="./logos/css3.svg" alt="CSS3 icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Github</span>
+                            <img src="./logos/github.svg" alt="Github icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Postman</span>
+                            <img src="./logos/postman.svg" alt="Postman icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>TravisCI</span>
+                            <img src="./logos/travis-ci.svg" alt="TravisCI icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Heroku</span>
+                            <img src="./logos/heroku.svg" alt="Heroku icon">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </header>
     </div>
 
     <div id="projects_container">
         <h2>My Projects</h2>
-        <div>
-            <p>Technologies I develop with and add onto as needed:</p>
-            <div class="technologies-container">
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>NodeJS</span>
-                        <img src="./logos/nodejs.svg" alt="NodeJS icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>Express</span>
-                        <img src="./logos/express.svg" alt="Express icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>ES6</span>
-                        <img src="./logos/ES6.svg" alt="Javascript ES6 icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>HTML5</span>
-                        <img src="./logos/html5.svg" alt="HTML5 icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>CSS3</span>
-                        <img src="./logos/css3.svg" alt="CSS3 icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>Github</span>
-                        <img src="./logos/github.svg" alt="Github icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>Postman</span>
-                        <img src="./logos/postman.svg" alt="Postman icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>TravisCI</span>
-                        <img src="./logos/travis-ci.svg" alt="TravisCI icon">
-                    </div>
-                </div>
-                <div class="technology-icon">
-                    <div class='tooltip'>
-                        <span class='tooltiptext'>Heroku</span>
-                        <img src="./logos/heroku.svg" alt="Heroku icon">
-                    </div>
-                </div>
-            </div>
-        </div>
+        <hr>
         <div class="project_box">
             <div class="project_box_image">
                 <h3 class="project_box_title">Boardgame Binder</h3>
@@ -178,41 +179,19 @@
             </div>
             <div class="project_box_info">
                 <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-                    <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-                    <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+                    <button class="tablinks" onclick="openInfo(event, 'How_Boardgame')">How to use app</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Lessons_Boardgame')">Lessons and difficulties</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Improvements_Boardgame')">Ongoing improvements</button>
                 </div>
 
-                <div id="London" class="tabcontent">
-                    <h3>London</h3>
-                    <p>London is the capital city of England.</p>
-                </div>
-
-                <div id="Paris" class="tabcontent">
-                    <h3>Paris</h3>
-                    <p>Paris is the capital of France.</p>
-                </div>
-
-                <div id="Tokyo" class="tabcontent">
-                    <h3>Tokyo</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-
-
-
-
-
-                <section class="project_about">
-                    <h3>How to use
-                        <span class="project_title">Boardgame Binder</span>:
-                    </h3>
+                <div id="How_Boardgame" class="tabcontent">
                     <p> Users search the library of nearly 10,000 games with filters such as title, number of players, and playing
                         time.
                         </br> After signing up for an account, users can record game experieces and share via social media.
                     </p>
-                </section>
-                <section class="project_lessons">
-                    <h3>Lessons and difficulties:</h3>
+                </div>
+
+                <div id="Lessons_Boardgame" class="tabcontent">
                     <p>
                         The original board game data from
                         <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite is not supported by Heroku. Dumped data into PostrgreSQL to be compatible. Discovered
@@ -221,7 +200,9 @@
                         <a href="https://aws.amazon.com/rds/" target="_blank"> AWS Relational Database Service</a>. </br> Issues of development vs production environment - will
                         use Docker in future projects.
                     </p>
-                    <h3>Ongoing improvements:</h3>
+                </div>
+
+                <div id="Improvements_Boardgame" class="tabcontent">
                     <ul class="project_improvements">
                         <li>Unit Tests (Mocha, Chai, Jasmine, Karma etc).</li>
                         <li>Loading screen (lots of slow responses due to free services).</li>
@@ -229,9 +210,7 @@
                         <li>Instructions on landing page.</li>
                         <li>Significant UI overhaul.</li>
                     </ul>
-
-
-                </section>
+                </div>
             </div>
         </div>
         <hr>
@@ -252,26 +231,30 @@
                     </div>
                 </div>
             </div>
+
             <div class="project_box_info">
-                <div class="project_box_info">
-                    <section class="project_about">
-                        <h3>How to use
-                            <span class="project_title">Find Your Film</span>:
-                        </h3>
-                        <p>Users search films by title (only). Click on movie poster to get more information.
-                        </p>
-                    </section>
-                    <section class="project_lessons">
-                        <h3>Lessons and difficulties:</h3>
-                        <p>Reading API documentation and creating CRUD operations for RESTful API
-                        </p>
-                        <h3>Ongoing improvements:</h3>
-                        <ul class="project_improvements">
-                            <li>Unit Tests.</li>
-                            <li>Clickable movie posters of Popular Movies on home page</li>
-                            <li>Moderate UI overhaul.</li>
-                        </ul>
-                    </section>
+                <div class="tab">
+                    <button class="tablinks" onclick="openInfo(event, 'How_Film')">How to use app</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Lessons_Film')">Lessons and difficulties</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Improvements_Film')">Ongoing improvements</button>
+                </div>
+
+                <div id="How_Film" class="tabcontent">
+                    <p> Users search films by title (only). Click on movie poster to get more information.</p>
+                </div>
+
+                <div id="Lessons_Film" class="tabcontent">
+                    <p>Reading API documentation and creating CRUD operations for RESTful API </p>
+                </div>
+
+                <div id="Improvements_Film" class="tabcontent">
+                    <ul class="project_improvements">
+
+                        <li>Unit Tests.</li>
+                        <li>Clickable movie posters of Popular Movies on home page</li>
+                        <li>Moderate UI overhaul.</li>
+
+                    </ul>
                 </div>
             </div>
         </div>
@@ -327,120 +310,130 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="project_box_info">
-                <div class="project_box_info">
-                    <section class="project_about">
-                        <h3>
-                            <span class="project_title">Travel Battle</span> is currently being built
-                        </h3>
-                        <p> User submits request for propsal with travel details. Travel agents bid to fill travel request for
-                            lower price. </br> "Reverse eBay for travel"
-                        </p>
-                    </section>
-                    <section class="project_lessons">
-                        <h3>Lessons and difficulties:</h3>
-                        <p>
-                            In progress
-                        </p>
-                        <h3>Ongoing improvements:</h3>
-                        In progress
-                    </section>
+                <p>Travel Battle is currently being built</p>
+                <div class="tab">
+                    <button class="tablinks" onclick="openInfo(event, 'How_Travel')">How to use app</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Lessons_Travel')" disabled>Lessons and difficulties</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Improvements_Travel')" disabled>Ongoing improvements</button>
+                </div>
+
+                <div id="How_Travel" class="tabcontent">
+                    <p> User submits request for propsal with travel details. Travel agents bid to fill travel request for lower
+                        price. </br> "Reverse eBay for travel"
+                    </p>
+                </div>
+
+                <div id="Lessons_Travel" class="tabcontent">
+                    <p> In progress </p>
+                </div>
+
+                <div id="Improvements_Travel" class="tabcontent">
+                    <ul class="project_improvements">
+                        <ul class="project_improvements">
+                            <li> In progress</li>
+                        </ul>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <hr>
+        <div id="about_container">
+            <section id="who">
+                <h2>Who is Matt Lee?</h2>
+                <p>My experiences at companies and projects such as
+                    <a href="http://www.lorealusa.com/" target="_blank" class="link">L'Oréal</a>,
+                    <a href="http://www.bostonscientific.com/en-US/Home.html" target="_blank" class="link">Boston Scientific</a>, and
+                    <a href="http://bearcatmotorsports.org/aboutbcms/" target="_blank" class="link">Formula SAE</a> made me reconsider my career path. I withdrew from mechanical engineering in my senior
+                    year at the University of Cincinnati. I hustled and paid off 6.5 years of college loans within 3 months
+                    of graduating, despite changing majors. </br>Since 2013, I've been a globetrotter, an entrepreneur, a
+                    success, a failure, but always a student. I am passionate about my pursuits and thrust my enirety into
+                    set goals. My attitude and character carry over into my journey as a developer.</p>
+            </section>
 
-    <div id="about_container">
-        <section id="who">
-            <h2>Who is Matt Lee?</h2>
-            <p>My experiences at companies and projects such as
-                <a href="http://www.lorealusa.com/" target="_blank" class="link">L'Oréal</a>,
-                <a href="http://www.bostonscientific.com/en-US/Home.html" target="_blank" class="link">Boston Scientific</a>, and
-                <a href="http://bearcatmotorsports.org/aboutbcms/" target="_blank" class="link">Formula SAE</a> made me reconsider my career path. I withdrew from mechanical engineering in my senior year
-                at the University of Cincinnati. I hustled and paid off 6.5 years of college loans within 3 months of graduating,
-                despite changing majors. </br>Since 2013, I've been a globetrotter, an entrepreneur, a success, a failure,
-                but always a student. I am passionate about my pursuits and thrust my enirety into set goals. My attitude
-                and character carry over into my journey as a developer.</p>
-        </section>
-
-        <section id="why">
-            <h2>Intro. to Programming</h2>
-            <p>There was a matchmaker, Facebook Ads, who first introduced me to programming. It was an advertisement for one
-                of the many programming bootcamps.
-            </p>
-            <blockquote>
-                </br>Even you can become a full stack developer within 3 months! </br>No programming experience necessary!</br>Get
-                a $100k+ job immediately! </br> No tuition payments until you've landed a job!</br> Google, Apple, and Facebook
-                hire our graduates!</br>
-            </blockquote>
-            <p>So I began my courtship. The first time I saw code was around January 2017. I bought books, did tutorials through
-                <a href="https://www.codecademy.com/learn" target="_blank" class="link">Codecademy</a>, and by March I was able to solve some
-                <a href="https://www.codewars.com/" target="_blank" class="link">Code Wars</a>
-                problems. </br>I attended an in-person pre-bootcamp in San Francisco for two weeks, returned to Columbus
-                for additional practice, and after considering the many options, enrolled in
-                <a href="https://www.thinkful.com/bootcamp/web-development/full-time/" target="_blank" class="link">Thinkful's </a>online bootcamp by August.
-            </p>
-            <p>These past few months have been bumpy, but I'm glad to say my relationship with programming progresses and I
-                couldn't be happier. Programming always seemed like magic to me. The mystery has been unveiled, yet it still
-                amazes me that so much can be built with some logic, coffee, and a lot of
-                <a href="https://stackoverflow.com/tour" target="_blank" class="link">Stack Overflow</a>.
-            </p>
-        </section>
-        <section id="stack">
-            <div class="top">
-                <h2>Utility Belt</h2>
-                <p>I develop full-stack web apps with Javascript. I use both SQL and noSQL databases as well as Angular 5+ and
-                    React/Redux.
-                    </br>technologies i use:</p>
-            </div>
-        </section>
-    </div>
-    <div id="misc">
-        <h2>Miscellaneous</h2>
-        <div class="photo_carousel">
-            <img src="./travel/scuba-diver.jpg" alt="Diving">
-            <img src="./travel/flying.jpg" alt="Flying">
-            <img src="./travel/hiking.jpg" alt="Hiking">
-
-            <img src="./travel/thailand-3.jpg" alt="Thailand">
-            <img src="./travel/thailand-2.jpg" alt="Thailand">
-            <img src="./travel/thailand-1.jpg" alt="Thailand">
-
-            <img src="./travel/zurich-2.jpg" alt="Zurich">
-            <img src="./travel/zurich-3.jpg" alt="Zurich">
-            <img src="./travel/zurich-1.jpg" alt="Zurich">
-
-            <img src="./travel/amsterdam-2.jpg" alt="">
-            <img src="./travel/amsterdam-3.jpg" alt="">
-            <img src="./travel/amsterdam-1.jpg" alt="">
-
-            <img src="./travel/abu-dhabi.jpg" alt="Abu Dhabi">
-            <img src="./travel/dubai-2.jpg" alt="Dubai">
-            <img src="./travel/dubai-1.jpg" alt="Dubai">
-
-            <img src="./travel/iceland-1.jpg" alt="Iceland">
-            <img src="./travel/iceland-3.jpg" alt="Iceland">
-            <img src="./travel/iceland-2.jpg" alt="Iceland">
-
-            <img src="./travel/new-zealand.jpg" alt="New Zealand">
-            <img src="./travel/australia-1.jpg" alt="Australia">
-            <img src="./travel/australia-2.jpg" alt="Australia">
-
-
-            <img src="./travel/china-2.jpg" alt="China">
-            <img src="./travel/myanmar.jpg" alt="">
-            <img src="./travel/china-3.jpg" alt="China">
+            <section id="why">
+                <h2>Intro. to Programming</h2>
+                <p>There was a matchmaker, Facebook Ads, who first introduced me to programming. It was an advertisement for
+                    one of the many programming bootcamps.
+                </p>
+                <blockquote>
+                    </br>Even you can become a full stack developer within 3 months! </br>No programming experience necessary!</br>Get
+                    a $100k+ job immediately! </br> No tuition payments until you've landed a job!</br> Google, Apple, and
+                    Facebook hire our graduates!</br>
+                </blockquote>
+                <p>So I began my courtship. The first time I saw code was around January 2017. I bought books, did tutorials
+                    through
+                    <a href="https://www.codecademy.com/learn" target="_blank" class="link">Codecademy</a>, and by March I was able to solve some
+                    <a href="https://www.codewars.com/" target="_blank" class="link">Code Wars</a>
+                    problems. </br>I attended an in-person pre-bootcamp in San Francisco for two weeks, returned to Columbus
+                    for additional practice, and after considering the many options, enrolled in
+                    <a href="https://www.thinkful.com/bootcamp/web-development/full-time/" target="_blank" class="link">Thinkful's </a>online bootcamp by August.
+                </p>
+                <p>These past few months have been bumpy, but I'm glad to say my relationship with programming progresses and
+                    I couldn't be happier. Programming always seemed like magic to me. The mystery has been unveiled, yet
+                    it still amazes me that so much can be built with some logic, coffee, and a lot of
+                    <a href="https://stackoverflow.com/tour" target="_blank" class="link">Stack Overflow</a>.
+                </p>
+            </section>
+            <section id="stack">
+                <div class="top">
+                    <h2>Utility Belt</h2>
+                    <p>I develop full-stack web apps with Javascript. I use both SQL and noSQL databases as well as Angular
+                        5+ and React/Redux.
+                        </br>technologies i use:</p>
+                </div>
+            </section>
         </div>
-        <p>I love traveling, especially hiking and scuba diving. After college, I adventured for 3 years - while operating two
-            businesses remotely. I've always got my hands around a good book or am seeking out mentors who specialize in
-            something I'm interested in. </br>While traveling, I was inspired to become a web developer and so here we are.
-        </p>
-    </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="index.js"></script>
-    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
-    <script async src="typed.js"></script>
+        <div id="misc">
+            <h2>Miscellaneous</h2>
+            <div class="photo_carousel">
+                <img src="./travel/scuba-diver.jpg" alt="Diving">
+                <img src="./travel/flying.jpg" alt="Flying">
+                <img src="./travel/hiking.jpg" alt="Hiking">
+
+                <img src="./travel/thailand-3.jpg" alt="Thailand">
+                <img src="./travel/thailand-2.jpg" alt="Thailand">
+                <img src="./travel/thailand-1.jpg" alt="Thailand">
+
+                <img src="./travel/zurich-2.jpg" alt="Zurich">
+                <img src="./travel/zurich-3.jpg" alt="Zurich">
+                <img src="./travel/zurich-1.jpg" alt="Zurich">
+
+                <img src="./travel/amsterdam-2.jpg" alt="">
+                <img src="./travel/amsterdam-3.jpg" alt="">
+                <img src="./travel/amsterdam-1.jpg" alt="">
+
+                <img src="./travel/abu-dhabi.jpg" alt="Abu Dhabi">
+                <img src="./travel/dubai-2.jpg" alt="Dubai">
+                <img src="./travel/dubai-1.jpg" alt="Dubai">
+
+                <img src="./travel/iceland-1.jpg" alt="Iceland">
+                <img src="./travel/iceland-3.jpg" alt="Iceland">
+                <img src="./travel/iceland-2.jpg" alt="Iceland">
+
+                <img src="./travel/new-zealand.jpg" alt="New Zealand">
+                <img src="./travel/australia-1.jpg" alt="Australia">
+                <img src="./travel/australia-2.jpg" alt="Australia">
+
+
+                <img src="./travel/china-2.jpg" alt="China">
+                <img src="./travel/myanmar.jpg" alt="">
+                <img src="./travel/china-3.jpg" alt="China">
+            </div>
+            <p>I love traveling, especially hiking and scuba diving. After college, I adventured for 3 years - while operating
+                two businesses remotely. I've always got my hands around a good book or am seeking out mentors who specialize
+                in something I'm interested in. </br>While traveling, I was inspired to become a web developer and so here
+                we are.
+            </p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+        <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+        <script async src="typed.js"></script>
 </body>
 
 </html>

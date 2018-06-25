@@ -29,9 +29,13 @@ h2 {
 }
 
 #headshot {
-    width: 200px;
+    width: 100px;
     border-radius: 50%;
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+#base_technologies p {
+    margin: 0
 }
 
 .landing_page {
@@ -132,6 +136,7 @@ blockquote:after {
 
 hr {
     width: 60%;
+    border-top: 1px solid #1966D2;
 }
 .project_container {
     display: block;
@@ -182,34 +187,32 @@ hr {
     background-color: #f1f1f1;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
+    width: 100%;
     background-color: inherit;
-    float: left;
-    border: none;
+    border: 1px solid black;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
 
-/* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
 }
+
+
 
 
 @media only screen and (min-width : 480px) {
