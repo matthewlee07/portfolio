@@ -139,6 +139,8 @@
                     <img src="./screenshots/BoardgameBinder.jpg" alt="Boardgame Binder screenshot" class="screenshot"> Live Demo
                     <span class="black">(Loads slowly, patience please)</span>
                 </a>
+            </div>
+            <div id="technology_and_code">
                 <p>Additonal technologies used:</p>
                 <div class="technologies-container">
                     <div class="technology-icon">
@@ -177,6 +179,7 @@
                 <span>|</span>
                 <a href="https://github.com/matthewlee07/BoardgameFinder-Client" target="_blank">Client Code</a>
             </div>
+
             <div class="project_box_info">
                 <div class="tab">
                     <button class="tablinks" onclick="openInfo(event, 'How_Boardgame')">How to use app</button>
@@ -187,27 +190,29 @@
                 <div id="How_Boardgame" class="tabcontent">
                     <p> Users search the library of nearly 10,000 games with filters such as title, number of players, and playing
                         time.
-                        </br> After signing up for an account, users can record game experieces and share via social media.
+                        </br> After sign up and login, users can record game experieces and share via social media.
                     </p>
                 </div>
 
                 <div id="Lessons_Boardgame" class="tabcontent">
-                    <p>
-                        The original board game data from
-                        <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite is not supported by Heroku. Dumped data into PostrgreSQL to be compatible. Discovered
-                        Heroku only supports up to 10k rows for free, whereas Boardgame Binder has over 90k rows. Migrated
+                    <p> Initially wrote server-side code for SQLite - was functional locally, but learned about development versus
+                        production environment. </br>Original board game data from
+                        <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite database is not supported by Heroku. Dumped data into PostrgreSQL for Heroku compatibility.
+                        Discovered Heroku only supports up to 10,000 rows for free - insufficient for Boardgame Binder.</br>Migrated
                         data to
-                        <a href="https://aws.amazon.com/rds/" target="_blank"> AWS Relational Database Service</a>. </br> Issues of development vs production environment - will
-                        use Docker in future projects.
+                        <a href="https://aws.amazon.com/rds/" target="_blank"> AWS RDS</a> for hosting.
+                        </br>
+                        Will try Docker in future projects and more architecture beforehand.
                     </p>
                 </div>
 
                 <div id="Improvements_Boardgame" class="tabcontent">
                     <ul class="project_improvements">
                         <li>Unit Tests (Mocha, Chai, Jasmine, Karma etc).</li>
-                        <li>Loading screen (lots of slow responses due to free services).</li>
+                        <li>Loading screen (slow because free services).</li>
                         <li>Real email, signup & social media integration.</li>
                         <li>Instructions on landing page.</li>
+                        <li>Medium post on data dump + RDS.</li>
                         <li>Significant UI overhaul.</li>
                     </ul>
                 </div>
@@ -220,7 +225,8 @@
                 <a href="https://matthewlee07.github.io/theMovieDatabaseAPI/" target="_blank">
                     <img src="./screenshots/TheMovieDb.jpg" alt="Find Your Film screenshot" class="screenshot">Live Demo</br>
                 </a>
-                <a href="https://github.com/matthewlee07/theMovieDatabaseAPI" target="_blank">View Code</a>
+            </div>
+            <div id="technology_and_code">
                 <p>Additional technologies used:</p>
                 <div class="technologies-container">
                     <div class="technology-icon">
@@ -230,6 +236,7 @@
                         </div>
                     </div>
                 </div>
+                <a href="https://github.com/matthewlee07/theMovieDatabaseAPI" target="_blank">View Code</a>
             </div>
 
             <div class="project_box_info">
@@ -240,11 +247,11 @@
                 </div>
 
                 <div id="How_Film" class="tabcontent">
-                    <p> Users search films by title (only). Click on movie poster to get more information.</p>
+                    <p> Users search films by keywords in title. Click on movie poster to get more information.</p>
                 </div>
 
                 <div id="Lessons_Film" class="tabcontent">
-                    <p>Reading API documentation and creating CRUD operations for RESTful API </p>
+                    <p>Reading API documentation. Usage of jQuery.</p>
                 </div>
 
                 <div id="Improvements_Film" class="tabcontent">
@@ -260,9 +267,13 @@
         </div>
         <hr>
         <div class="project_box">
-            <h3 class="project_box_title">Travel Battle (being built)</h3>
+
             <div class="project_box_image">
+                <h3 class="project_box_title">Travel Battle </br>(Currently being built)</h3>
                 <img src="./screenshots/under-construction.jpg" alt="Travel Battle screenshot" class="screenshot under-construction">
+            </div>
+
+            <div id="technology_and_code">
                 <p>Additional technologies used:</p>
                 <div class="technologies-container">
                     <div class="technology-icon">
@@ -309,11 +320,11 @@
                         </div>
                     </div>
                 </div>
+                <a href="https://github.com/matthewlee07/Travel-Battle-Server" target="_blank">Server Code</a>
+                <span>|</span>
+                <a href="https://github.com/matthewlee07/Travel-Battle" target="_blank">Client Code</a>
             </div>
-
-
             <div class="project_box_info">
-                <p>Travel Battle is currently being built</p>
                 <div class="tab">
                     <button class="tablinks" onclick="openInfo(event, 'How_Travel')">How to use app</button>
                     <button class="tablinks" onclick="openInfo(event, 'Lessons_Travel')" disabled>Lessons and difficulties</button>
@@ -377,57 +388,48 @@
                     <a href="https://stackoverflow.com/tour" target="_blank" class="link">Stack Overflow</a>.
                 </p>
             </section>
-            <section id="stack">
-                <div class="top">
-                    <h2>Utility Belt</h2>
-                    <p>I develop full-stack web apps with Javascript. I use both SQL and noSQL databases as well as Angular
-                        5+ and React/Redux.
-                        </br>technologies i use:</p>
+            <section id="misc">
+                <h2>Miscellaneous</h2>
+                <div class="photo_carousel">
+                    <img src="./travel/scuba-diver.jpg" alt="Diving">
+                    <img src="./travel/flying.jpg" alt="Flying">
+                    <img src="./travel/hiking.jpg" alt="Hiking">
+
+                    <img src="./travel/thailand-3.jpg" alt="Thailand">
+                    <img src="./travel/thailand-2.jpg" alt="Thailand">
+                    <img src="./travel/thailand-1.jpg" alt="Thailand">
+
+                    <img src="./travel/zurich-2.jpg" alt="Zurich">
+                    <img src="./travel/zurich-3.jpg" alt="Zurich">
+                    <img src="./travel/zurich-1.jpg" alt="Zurich">
+
+                    <img src="./travel/amsterdam-2.jpg" alt="">
+                    <img src="./travel/amsterdam-3.jpg" alt="">
+                    <img src="./travel/amsterdam-1.jpg" alt="">
+
+                    <img src="./travel/abu-dhabi.jpg" alt="Abu Dhabi">
+                    <img src="./travel/dubai-2.jpg" alt="Dubai">
+                    <img src="./travel/dubai-1.jpg" alt="Dubai">
+
+                    <img src="./travel/iceland-1.jpg" alt="Iceland">
+                    <img src="./travel/iceland-3.jpg" alt="Iceland">
+                    <img src="./travel/iceland-2.jpg" alt="Iceland">
+
+                    <img src="./travel/new-zealand.jpg" alt="New Zealand">
+                    <img src="./travel/australia-1.jpg" alt="Australia">
+                    <img src="./travel/australia-2.jpg" alt="Australia">
+
+
+                    <img src="./travel/china-2.jpg" alt="China">
+                    <img src="./travel/myanmar.jpg" alt="">
+                    <img src="./travel/china-3.jpg" alt="China">
                 </div>
+                <p>I love traveling, especially hiking and scuba diving. After college, I adventured for 3 years - while operating
+                    two businesses remotely. I've always got my hands around a good book or am seeking out mentors who specialize
+                    in something I'm interested in. </br>While traveling, I was inspired to become a web developer and so
+                    here we are.
+                </p>
             </section>
-        </div>
-
-        <div id="misc">
-            <h2>Miscellaneous</h2>
-            <div class="photo_carousel">
-                <img src="./travel/scuba-diver.jpg" alt="Diving">
-                <img src="./travel/flying.jpg" alt="Flying">
-                <img src="./travel/hiking.jpg" alt="Hiking">
-
-                <img src="./travel/thailand-3.jpg" alt="Thailand">
-                <img src="./travel/thailand-2.jpg" alt="Thailand">
-                <img src="./travel/thailand-1.jpg" alt="Thailand">
-
-                <img src="./travel/zurich-2.jpg" alt="Zurich">
-                <img src="./travel/zurich-3.jpg" alt="Zurich">
-                <img src="./travel/zurich-1.jpg" alt="Zurich">
-
-                <img src="./travel/amsterdam-2.jpg" alt="">
-                <img src="./travel/amsterdam-3.jpg" alt="">
-                <img src="./travel/amsterdam-1.jpg" alt="">
-
-                <img src="./travel/abu-dhabi.jpg" alt="Abu Dhabi">
-                <img src="./travel/dubai-2.jpg" alt="Dubai">
-                <img src="./travel/dubai-1.jpg" alt="Dubai">
-
-                <img src="./travel/iceland-1.jpg" alt="Iceland">
-                <img src="./travel/iceland-3.jpg" alt="Iceland">
-                <img src="./travel/iceland-2.jpg" alt="Iceland">
-
-                <img src="./travel/new-zealand.jpg" alt="New Zealand">
-                <img src="./travel/australia-1.jpg" alt="Australia">
-                <img src="./travel/australia-2.jpg" alt="Australia">
-
-
-                <img src="./travel/china-2.jpg" alt="China">
-                <img src="./travel/myanmar.jpg" alt="">
-                <img src="./travel/china-3.jpg" alt="China">
-            </div>
-            <p>I love traveling, especially hiking and scuba diving. After college, I adventured for 3 years - while operating
-                two businesses remotely. I've always got my hands around a good book or am seeking out mentors who specialize
-                in something I'm interested in. </br>While traveling, I was inspired to become a web developer and so here
-                we are.
-            </p>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
