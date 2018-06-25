@@ -109,27 +109,6 @@ blockquote:after {
     vertical-align: -0.4em;
 }
 
-.stack_container {
-    display: grid;
-    grid-auto-rows: 1fr 1fr 1fr;
-    grid-template-areas:
-    "serverwords"
-    "clientwords"
-    "otherwords"
-}
-
-.serverwords {
-    grid-area: serverwords;
-}
-
-.otherwords {
-    grid-area: otherwords;
-}
-
-.clientwords {
-    grid-area: clientwords;
-}
-
 .black {
     color:black;
 }
@@ -295,49 +274,33 @@ hr {
 
 @media only screen and (min-width : 1824px) {
     * {
-        font-size: 36px;
-        line-height: 75px;
+        font-size: 18px;
+        line-height: 45px;
     }
 
-    /* .contact h1 {
-        font-size: 75px;
-        line-height: 150px;
+    .contact h1 {
+        font-size: 55px;
+        line-height: 80px;
     }
 
     #intro_words p{
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .app-adj {
-        font-size: 100px;
+        font-size: 80px;
+    }
+
+    #headshot {
+        width: 150px;
+        border-radius: 50%;
+        margin-top: 20px;
     }
 
     h2 {
         font-size: 75px;
-    } */
-
-    .stack_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-    "serverwords   otherwords  clientwords"
-}
-
-    .serverwords {
-        grid-area: serverwords;
     }
 
-    .otherwords {
-        grid-area: otherwords;
-    }
-
-    .clientwords {
-        grid-area: clientwords;
-    }
-
-    .skillwords {
-        height: 350px;
-    }
 }
 
 
