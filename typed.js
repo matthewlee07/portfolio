@@ -464,7 +464,7 @@
     $(function () {
         $(".js-app-adj").typed({
             strings: [
-                "functional", "mobile-first", "optimized", "reliable", "responsive", "scalable", "secure", "tested"
+                "dynamic","functional", "mobile-first", "optimized", "reliable", "responsive", "scalable", "secure", "tested"
             ],
             typeSpeed: 50,
             startDelay: 1000,

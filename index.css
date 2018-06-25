@@ -4,9 +4,13 @@
     text-align: center;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 32px;
     font-family: 'Questrial', sans-serif;
+}
+
+header {
+    margin-top: 1%
 }
 
 h1 {
@@ -19,20 +23,39 @@ h1 {
     font-family: 'Roboto+Slab', cursive;
 }
 
+<<<<<<< HEAD
 .accordion-section-title {
     font-family: 'Roboto Slab', serif;
     font-family: 'Tajawal', sans-serif;
     font-size: 24px;
+=======
+h2 {
+    font-family: 'Spirax', cursive;
+    font-size: 30px;
+>>>>>>> master
 }
 
 #headshot {
     width: 200px;
     border-radius: 50%;
+    margin-top: 40px;
 }
+
+.landing_page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 
 .link {
     text-decoration: none;
     color: grey;
+}
+
+#intro_words p{
+    font-size: 18px;
 }
 
 img {
@@ -55,6 +78,11 @@ p {
 #about_container {
     padding: 1%;
 }
+
+/* section {
+    padding: 2%;
+    border-top: 1px solid #1966D2;
+} */
 
 blockquote {
     padding: 8px;
@@ -105,19 +133,134 @@ blockquote:after {
     grid-area: clientwords;
 }
 
-.skillwords {
-    height: 200px
+.black {
+    color:black;
+}
+
+hr {
+    width: 60%;
+}
+.project_container {
+    display: block;
+	margin: auto;
+	width: 850px;
+	padding-top: 20px;
+	font-size: 20px
+}
+
+.project_box_title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+}
+
+.project_box a {
+    color:#1966D2
+}
+
+.project_box {
+    display: block;
+    width: 80%;
+	margin: auto;
+	padding: 2%;
+    margin-top: 20px;
+}
+
+.project_box_image .screenshot {
+    width: 100%;
+}
+
+.project_title {
+    color:#1966D2
+}
+
+.project_improvements li {
+    list-style: none;
+    text-align: left;
+    line-height: 2em
+}
+
+.screenshot:hover {
+    filter: brightness(50%)
 }
 
 @media only screen and (min-width : 480px) {
+
     #about_container {
         padding: 1%;
         margin: 5%
     }
+
+    .skillwords {
+        height: 100px;
+    }
+
 }
 
+@media only screen and (min-width : 768px) {
 
-@media only screen and (min-width : 739px) {
+    #about_container {
+        padding: 1%;
+        margin: 5%
+    }
+
+    .skillwords {
+        height: 200px;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+    * {
+        font-size: 18px;
+    }
+
+    #intro_words p{
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    #about_container {
+        padding: 1%;
+        margin: 5%
+    }
+
+    .skillwords {
+        height: 300px;
+    }
+
+
+    .project_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "project_box_image project_box_info";
+        grid-column-gap: 2%;
+    }
+
+        .project_box_image {
+            grid-area: project_box_image;
+        }
+
+        .project_box_info {
+            grid-area: project_box_info;
+        }
+}
+
+@media only screen and (min-width : 1824px) {
+    * {
+        font-size: 24px;
+    }
+
+    #intro_words p{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
     .stack_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -138,9 +281,15 @@ blockquote:after {
     }
 
     .skillwords {
-        height: 250px
+        height: 350px;
     }
 }
+
+
 .slick-dots li {
     display: none;
+}
+
+.under-construction {
+    max-width: 200px;
 }
