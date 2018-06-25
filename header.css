@@ -151,12 +151,13 @@ a {
 	border: 0;
 	width: 35px;
 	text-align: center;
-	margin: .5px;
+	margin: 2px;
 	font-size: 12px;
 }
 
 .technology-icon img {
-	height: 30px;
+	height: 40px;
+	width: 40px;
 }
 
 .technology-icon .image-text {
@@ -211,4 +212,23 @@ a {
 
 .technology-icon:hover .tooltiptext {
 	visibility: visible;
+}
+@media only screen and (min-width : 1224px) {
+	.technologies-container {
+		width: 100%;
+	}
+
+	.technology-icon {
+		padding: 0;
+		border: 0;
+		width: 70px;
+		text-align: center;
+		margin: .5px;
+		font-size: 12px;
+	}
+
+	.technology-icon img {
+		height: 60px;
+		width: 60px;
+	}
 }

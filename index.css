@@ -299,7 +299,7 @@ hr {
         line-height: 75px;
     }
 
-    .contact h1 {
+    /* .contact h1 {
         font-size: 75px;
         line-height: 150px;
     }
@@ -314,7 +314,7 @@ hr {
 
     h2 {
         font-size: 75px;
-    }
+    } */
 
     .stack_container {
     display: grid;
