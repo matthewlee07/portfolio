@@ -149,10 +149,6 @@ hr {
     filter: brightness(50%)
 }
 
-.technology_and_code {
-    border:2px solid red;
-}
-
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -192,63 +188,22 @@ hr {
     max-width: 200px;
 }
 
-/* @media only screen and (max-width : 360px) {
-    * {
-        font-size: 10px;
-        line-height: 1.5em;
-    }
-
-    .landing_page {
-        height: 100vh;
-        width: 100vw;
-    }
-
-    .contact h1 {
-        font-size: 24px;
-        line-height: 30px;
-        margin-top: -100px;
-        margin-bottom: 20px;
-    }
-
-    #intro_words p {
-        font-size: 12px;
-        margin: 20px;
-    }
-
-    .app-adj {
-        font-size: 16px;
-    }
-
-    #headshot {
-        width: 75px;
-        border-radius: 50%;
-        margin: 20px;
-    }
-
-    .technology_and_code {
-        margin: 10px;
-    }
-
-    .project_box_info {
-        margin: 10px;
-    }
-}
-
-
 @media only screen and (min-width : 480px) {
-
-    #about_container {
-        padding: 1%;
-        margin: 5%
+    * {
+        font-size: 18px;
+        line-height: 32px;
     }
 
-    .skillwords {
-        height: 100px;
+    #greetings p {
+        font-size: 2em;
+        line-height: .5em;
     }
-
 }
 
 @media only screen and (min-width : 768px) {
+    header {
+        padding: 2em;
+    }
 
     #about_container {
         padding: 1%;
@@ -260,7 +215,7 @@ hr {
     }
 }
 
-@media only screen and (min-width : 1224px) {
+/* @media only screen and (min-width : 1224px) {
     * {
         font-size: 18px;
     }
