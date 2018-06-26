@@ -39,27 +39,31 @@
         </nav>
 
         <header>
+            <h1>
+                <div id="greetings">
+                    <p>Hi! I'm Matt</p>
+                    <p>a full-stack developer</p>
+                    <p>in Columbus, Ohio</p>
+                </div>
+            </h1>
             <div class="col contact">
-                <h1>
-                    <div id="greetings">
-                        <p>Hi! I'm Matt</p>
-                        <p>a full-stack developer</p>
-                        <p>in Columbus, Ohio</p>
-                    </div>
-                </h1>
+
                 <nav class="contact-links">
                     <ul>
                         <li class="contact-link contact-link-github">
                             <a target="_blank" href="https://www.github.com/matthewlee07">
-                                <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a>
+                                <i class="fa fa-github-square" aria-hidden="true">GitHub</i>
+                            </a>
                         </li>
                         <li class="contact-link contact-link-linkedin">
                             <a target="_blank" href="https://www.linkedin.com/in/dev-matt-lee">
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+                                <i class="fa fa-linkedin-square" aria-hidden="true">LinkedIn</i>
+                            </a>
                         </li>
                         <li class="contact-link contact-link-email">
                             <a target="_blank" href="mailto:thematthewalee@gmail.com" class="email-link">
-                                <i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+                                <i class="fa fa-envelope" aria-hidden="true">Email</i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -177,7 +181,6 @@
                             <img src="./logos/aws-rds.svg" alt="AWS Relational Database Service icon">
                         </div>
                     </div>
-
                 </div>
                 <a href="https://github.com/matthewlee07/boardgameProfile" target="_blank">Server Code</a>
                 <span>|</span>
@@ -190,12 +193,9 @@
                     <button class="tablinks" onclick="openInfo(event, 'Lessons_Boardgame')">Lessons and difficulties</button>
                     <button class="tablinks" onclick="openInfo(event, 'Improvements_Boardgame')">Ongoing improvements</button>
                 </div>
-
                 <div id="How_Boardgame" class="tabcontent">
-                    <p> Users search through library of nearly 10,000 games with filters.
-                    </p>
-                    <p>After sign up and login, users can record game experieces and share via social media.
-                    </p>
+                    <p> Users search through library of nearly 10,000 games with filters. </p>
+                    <p>After sign up and login, users can record game experieces and share via social media. </p>
                 </div>
 
                 <div id="Lessons_Boardgame" class="tabcontent">
@@ -204,7 +204,8 @@
                     <p>
                         Original board game data from
                         <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite database is not supported by Heroku. Dumped data into PostrgreSQL for compatibility.
-                        Discovered Heroku supports up to 10,000 rows for free; Boardgame Binder has over 90,000 rows.</p>
+                        Discovered Heroku supports up to 10,000 rows for free; Boardgame Binder has over 90,000 rows.
+                    </p>
                     <p>Migrated data to
                         <a href="https://aws.amazon.com/rds/" target="_blank"> AWS RDS</a> for hosting.
                     </p>
@@ -267,11 +268,9 @@
 
                 <div id="Improvements_Film" class="tabcontent">
                     <ul class="project_improvements">
-
                         <li>Unit Tests.</li>
                         <li>Clickable movie posters of Popular Movies on home page</li>
                         <li>Moderate UI overhaul.</li>
-
                     </ul>
                 </div>
             </div>
@@ -361,7 +360,8 @@
                     <a href="http://www.bostonscientific.com/en-US/Home.html" target="_blank" class="link">Boston Scientific</a>, and
                     <a href="http://bearcatmotorsports.org/aboutbcms/" target="_blank" class="link">Formula SAE</a> in college made me reconsider my career path. I switched out of mechanical engineering
                     in my senior year at the University of Cincinnati. I hustled and paid off 6.5 years of college loans
-                    within 3 months of graduating. </p>
+                    within 3 months of graduating.
+                </p>
                 <p>Since 2013, I've been a globetrotter, an entrepreneur, a success, a failure, but always a student. I am passionate
                     about my pursuits and thrust my enirety into my goals.
                 </p>
@@ -382,7 +382,8 @@
                 </blockquote>
                 <p>So I began my courtship. The first time I saw code was around January 2017. I bought books, did tutorials
                     through
-                    <a href="https://www.codecademy.com/learn" target="_blank" class="link">Codecademy</a>, and by March I was able to solve Fizz Buzz. </p>
+                    <a href="https://www.codecademy.com/learn" target="_blank" class="link">Codecademy</a>, and by March I was able to solve Fizz Buzz.
+                </p>
                 <p>I attended an in-person pre-bootcamp in San Francisco for two weeks, returned to Columbus for additional
                     practice, and after considering the many options, enrolled in
                     <a href="https://www.thinkful.com/bootcamp/web-development/full-time/" target="_blank" class="link">Thinkful's </a>online bootcamp by August.
@@ -431,7 +432,8 @@
                 </div>
                 <p>I love traveling - especially hiking and scuba diving. After college, I adventured for about 3 years - while
                     operating two businesses remotely. I've always got my hands around a good book or am seeking out mentors
-                    who specialize in something of interest. </p>
+                    who specialize in something of interest.
+                </p>
                 <p>While traveling, I was inspired to become a web developer and so here we are.</p>
             </section>
         </div>
@@ -439,7 +441,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="index.js"></script>
         <script src="slick/slick/slick.min.js"></script>
-        <script async src="typed.js"></script>
+        <script src="typed.js"></script>
 </body>
 
 </html>
