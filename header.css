@@ -184,3 +184,10 @@ a {
 .technology-icon:hover .tooltiptext {
 	visibility: visible;
 }
+@media (orientation: landscape) {
+
+	.contact {
+		padding: 0;
+	}
+
+}
