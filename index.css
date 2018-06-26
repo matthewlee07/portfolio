@@ -247,3 +247,72 @@ hr {
             font-size: 16px
         }
 }
+
+@media (orientation: landscape) {
+    * {
+        font-size: 12px !important;
+    }
+
+    #greetings {
+        margin: -.5em;
+    }
+
+    #greetings p {
+        line-height: .1em;
+    }
+
+    #intro_words p{
+        padding: -1em;
+        margin: -1em;
+    }
+
+    #headshot {
+        width: 50px;
+        margin-top: 1px;
+    }
+    #base_technologies {
+        margin: -1em;
+        padding: 0;
+    }
+
+    .project_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "project_box_image      project_box_info"
+        "project_box_image      project_box_info"
+        "project_box_image      project_box_info"
+        "technology_and_code      project_box_info";
+        grid-column-gap: 2%;
+    }
+
+    .project_box_image {
+        grid-area: project_box_image;
+    }
+
+    .project_box_info {
+        grid-area: project_box_info;
+    }
+
+    .technology_and_code {
+        grid-area: technology_and_code;
+        margin:0;
+        padding:0;
+    }
+
+    .technology_and_code p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .technologies-container {
+        margin:0;
+        padding: 0;
+    }
+
+    .tab button{
+        border: 2px solid pink;
+        font-size: 8px;
+    }
+}
