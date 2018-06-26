@@ -1,5 +1,3 @@
-/* need to add normalize or reset */
-
 * {
     text-align: center;
     box-sizing: border-box;
@@ -215,36 +213,18 @@ hr {
     }
 }
 
-/* @media only screen and (min-width : 1224px) {
-    * {
-        font-size: 18px;
-    }
+@media only screen and (min-width : 1224px) {
 
-    #intro_words p{
-        font-size: 22px;
+    header {
+        padding: 5% 10%;
     }
-
-    h2 {
-        font-size: 40px;
-    }
-
-    #about_container {
-        padding: 1%;
-        margin: 5%
-    }
-
-    .skillwords {
-        height: 300px;
-    }
-
 
     .project_box {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas:
         "project_box_image technology_and_code"
-        "project_box_image project_box_info"
         "project_box_image project_box_info"
         "project_box_image project_box_info"
         "project_box_image project_box_info";
@@ -267,38 +247,3 @@ hr {
             font-size: 16px
         }
 }
-
-@media only screen and (min-width : 1824px) {
-    * {
-        font-size: 18px;
-        line-height: 45px;
-    }
-
-    .contact h1 {
-        font-size: 55px;
-        line-height: 80px;
-    }
-
-    #intro_words p{
-        font-size: 30px;
-    }
-
-    .app-adj {
-        font-size: 80px;
-    }
-
-    #headshot {
-        width: 150px;
-        border-radius: 50%;
-        margin-top: 20px;
-    }
-
-    h2 {
-        font-size: 75px;
-    }
-
-} */
-
-
-
-
