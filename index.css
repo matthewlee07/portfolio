@@ -98,6 +98,7 @@ hr {
     width: 60%;
     border-top: 1px solid #1966D2;
 }
+
 .project_container {
     display: block;
 	margin: auto;
@@ -249,30 +250,23 @@ hr {
 }
 
 @media (orientation: landscape) {
-    * {
-        font-size: 16px !important;
+
+    header {
+        padding: 5%;
     }
 
-    #greetings {
-        margin: -.5em;
-    }
-
-    #greetings p {
-        line-height: .1em;
-    }
-
-    #intro_words p{
-        padding: -1em;
-        margin: -1em;
+    #intro_words {
+        margin: 20px;
     }
 
     #headshot {
-        width: 50px;
+        width: 100px;
         margin-top: 1px;
     }
+
     #base_technologies {
-        margin: -1em;
-        padding: 0;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .project_box {
@@ -297,21 +291,9 @@ hr {
 
     .technology_and_code {
         grid-area: technology_and_code;
-        margin:0;
-        padding:0;
-    }
-
-    .technology_and_code p {
-        margin: 0;
-        padding: 0;
     }
 
     .technologies-container {
-        margin:0;
-        padding: 0;
-    }
-
-    .tab button {
-        font-size: 8px;
+        width: 80%;
     }
 }
