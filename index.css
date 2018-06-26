@@ -3,47 +3,46 @@
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 2em;
     font-family: 'Questrial', sans-serif;
 }
 
 header {
     height: 100vh;
-    padding: 2%;
+    padding: 10%;
 }
 
 #greetings p {
-    line-height: .5em;
+    line-height: 1.5em;
 }
 
 .app-adj {
     font-size: 2em;
-    display: inline;
     font-family: 'Abril Fatface', cursive;
-}
-
-h2 {
-    font-family: 'Spirax', cursive;
-    font-size: 30px;
 }
 
 #headshot {
     width: 100px;
     border-radius: 50%;
+    margin: 20px;
+}
+
+h2 {
+    font-family: 'Spirax', cursive;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+hr {
+    width: 60%;
+    border-top: 1px solid #1966D2;
     margin-top: 20px;
 }
-
-#base_technologies p {
-    margin: 0
-}
-
 
 .link {
     text-decoration: none;
     color: grey;
 }
-
-
 
 img {
     width: 100%;
@@ -52,51 +51,7 @@ img {
 
 p {
     display: block;
-    margin-left: auto;
-    margin-right:  auto;
-    text-align: center;
-    padding: 0 5%;
-}
-
-.photo_carousel {
-    padding: 12px;
-}
-
-#about_container {
-    padding: 1%;
-}
-
-blockquote {
-    padding: 8px;
-    background-color: #faebbc;
-    border-top: 1px solid #e1cc89;
-    border-bottom: 1px solid #e1cc89;
-    margin: 1% 10%;
-    background-position: top left;
-    background-repeat: no-repeat;
-    text-indent: 23px;
-}
-
-blockquote:before {
-    color: #ccc;
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-}
-blockquote:after {
-    color: #ccc;
-    content: close-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-}
-
-hr {
-    width: 60%;
-    border-top: 1px solid #1966D2;
+    margin: 0 auto;
 }
 
 .project_container {
@@ -174,9 +129,13 @@ hr {
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding: 2%;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+.tabcontent p {
+    font-size: .9em;
 }
 
 .slick-dots li {
@@ -187,121 +146,48 @@ hr {
     max-width: 200px;
 }
 
-@media only screen and (min-width : 480px) {
-    * {
-        font-size: 18px;
-        line-height: 32px;
-    }
-
-    #greetings p {
-        font-size: 2em;
-        line-height: .5em;
-    }
+.photo_carousel {
+    padding: 12px;
 }
 
-@media only screen and (min-width : 768px) {
-    header {
-        padding: 2em;
-    }
-
-    #about_container {
-        padding: 1%;
-        margin: 5%
-    }
-
-    .skillwords {
-        height: 200px;
-    }
+#about_container {
+    width: 80%;
+    margin: 0 auto;
 }
 
-@media only screen and (min-width : 1224px) {
+blockquote {
+    padding: 5%;
+    background-color: #faebbc;
+    margin: 1%;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
 
-    header {
-        padding: 5% 10%;
-    }
+blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
+blockquote:after {
+    color: #ccc;
+    content: close-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+}
 
-    .project_box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-        "project_box_image technology_and_code"
-        "project_box_image project_box_info"
-        "project_box_image project_box_info"
-        "project_box_image project_box_info";
-        grid-column-gap: 2%;
-    }
+@media only screen and (min-width : 480px) and (orientation: portrait) {
+}
 
-        .project_box_image {
-            grid-area: project_box_image;
-        }
+@media only screen and (min-width : 768px) and (orientation: portrait) {
+}
 
-        .project_box_info {
-            grid-area: project_box_info;
-            margin-top: 20px;
-        }
-        .technology_and_code {
-            grid-area: technology_and_code;
-        }
-
-        .project_box_info p ul li{
-            font-size: 16px
-        }
+@media only screen and (min-width : 1224px) and (orientation: portrait) {
 }
 
 @media (orientation: landscape) {
-    body {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    header {
-        padding: 5%;
-    }
-
-    #intro_words {
-        margin: 20px;
-    }
-
-    #headshot {
-        width: 100px;
-        margin-top: 1px;
-    }
-
-    #base_technologies {
-        width: 60%;
-        margin: 0 auto;
-    }
-
-    .project_box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas:
-        "project_box_image      project_box_info"
-        "project_box_image      project_box_info"
-        "technology_and_code      project_box_info";
-        grid-column-gap: 2%;
-    }
-
-    .project_box_image {
-        grid-area: project_box_image;
-    }
-
-    .project_box_info {
-        grid-area: project_box_info;
-    }
-
-    .technology_and_code {
-        grid-area: technology_and_code;
-    }
-
-    .technologies-container {
-        width: 80%;
-    }
-
-    #about_container {
-        width: 80%;
-        margin: 0 auto;
-    }
 }
