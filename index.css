@@ -17,6 +17,10 @@ h1 {
     line-height: 50px;
 }
 
+#greetings p {
+    line-height: .5em;
+}
+
 .app-adj {
     font-size: 50px;
     display: inline;
@@ -145,6 +149,10 @@ hr {
     color:#1966D2
 }
 
+.project_improvements {
+    padding: 0;
+}
+
 .project_improvements li {
     list-style: none;
     text-align: left;
@@ -220,12 +228,10 @@ hr {
     }
 
     .technology_and_code {
-        /* border: 2px solid blue; */
         margin: 10px;
     }
 
     .project_box_info {
-        /* border: 2px solid red; */
         margin: 10px;
     }
 }
@@ -240,10 +246,6 @@ hr {
 
     .skillwords {
         height: 100px;
-    }
-
-    .technology_and_code {
-        border: 2px solid red;
     }
 
 }
