@@ -13,6 +13,7 @@ header {
 }
 
 #greetings p {
+    font-size: 1.5em;
     line-height: 1.5em;
 }
 
@@ -29,7 +30,7 @@ header {
 
 h2 {
     font-family: 'Spirax', cursive;
-    font-size: 2.5em;
+    font-size: 2em;
     margin: 0;
 }
 
@@ -180,15 +181,6 @@ blockquote:after {
     vertical-align: -0.4em;
 }
 
-@media only screen and (min-width : 480px) and (orientation: portrait) {
-}
-
-@media only screen and (min-width : 768px) and (orientation: portrait) {
-}
-
-@media only screen and (min-width : 1224px) and (orientation: portrait) {
-}
-
 @media (orientation: landscape) {
     header {
         padding: 2%;
@@ -196,6 +188,7 @@ blockquote:after {
 
     #greetings p {
         line-height: 1.2em;
+        font-size: 1em;
     }
 
     .app-adj {
@@ -210,10 +203,196 @@ blockquote:after {
     }
 
     h2 {
-        margin-top: 30px;
+        margin-top: 20px;
+    }
+
+    .project_improvements {
+        text-indent: 10%;
+    }
+}
+
+@media only screen and (min-width : 375px) and (min-height: 667px) {
+
+    * {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 10%;
+    }
+
+}
+
+@media only screen and (min-width : 667px) and (min-height : 375px) {
+    #greetings p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+    .app-adj {
+        font-size: 1.5em;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #headshot {
+        width: 80px;
+        border-radius: 50%;
+        margin: 1%;
+    }
+
+    .project_improvements {
+        text-indent: 15%;
+    }
+}
+
+@media only screen and (min-width : 480px) and (min-height: 681px) {
+    * {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-height : 480px) and (min-width : 681px) {
+
+    header {
+        padding: 2%;
+    }
+
+    #greetings p {
+        font-size: 1.6em;
+        line-height: 1.5em;
+    }
+
+    #intro_words {
+        padding: 2%;
+    }
+
+    .app-adj {
+        font-size: 2em;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #headshot {
+        width: 100px;
+        border-radius: 50%;
+        margin: 1%;
+    }
+
+    .project_improvements {
+        text-indent: 15%;
+    }
+}
+
+@media only screen and (min-height : 411px) and (min-width : 731px) {
+
+    #greetings p {
+        font-size: 1.25em;
+        line-height: 1.5em;
+    }
+
+    #intro_words {
+        padding: 1%;
+    }
+
+    .app-adj {
+        font-size: 2em;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #headshot {
+        width: 80px;
+        border-radius: 50%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (min-height : 823px) and (min-width : 411px) {
+    * {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 15%
+    }
+
+    #greetings p {
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+
+    #intro_words {
+        padding: 2%;
+    }
+
+    .app-adj {
+        font-size: 2.5em;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #headshot {
+        width: 150px;
+        border-radius: 50%;
+        margin: 1%;
+    }
+}
+
+@media only screen and (min-width : 823px) and (min-height : 411px) {
+    .project_improvements {
+        text-indent: 20%;
+    }
+}
+
+@media only screen and (min-width : 768px) and (min-height : 1024px) {
+
+    * {
+        font-size: 24px;
+    }
+
+    .project_improvements {
+        text-indent: 0%;
+    }
+}
+
+@media only screen and (min-height : 768px) and (min-width : 1024px) {
+
+    * {
+        font-size: 24px;
+    }
+
+    header {
+        padding: 10%;
     }
 
     .project_improvements {
         text-indent: 5%;
+    }
+}
+
+@media only screen and (min-width : 1224px) {
+
+    * {
+        font-size: 18px;
+    }
+    header {
+        padding: 2%;
+    }
+
+    #greetings p {
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+
+    #intro_words {
+        padding: 0;
+        margin: 0;
+    }
+
+    .app-adj {
+        font-size: 2.5em;
+        font-family: 'Abril Fatface', cursive;
+    }
+
+    #headshot {
+        width: 150px;
+        border-radius: 50%;
     }
 }

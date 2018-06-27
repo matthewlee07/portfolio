@@ -184,10 +184,44 @@ a {
 .technology-icon:hover .tooltiptext {
 	visibility: visible;
 }
-@media (orientation: landscape) {
 
-	.contact {
-		padding: 0;
+@media only screen and (min-width : 768px) and (min-height : 1024px) {
+
+    .technologies-container {
+		display: flex;
+		justify-content: space-around
 	}
 
+	.technology-icon img {
+		height: 60px;
+		width: 60px;
+	}
+}
+
+@media only screen and (min-height : 768px) and (min-width : 1024px) {
+
+    .technologies-container {
+		display: flex;
+		justify-content: space-around
+	}
+
+	.technology-icon img {
+		height: 60px;
+		width: 60px;
+	}
+}
+
+@media only screen and (min-width : 1224px) {
+	.contact {
+		padding: 1%;
+	}
+	.technologies-container {
+		width: 80%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.technology-icon img {
+		height: 70px;
+		width: 60px;
+	}
 }
