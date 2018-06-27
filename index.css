@@ -367,7 +367,7 @@ blockquote:after {
     }
 }
 
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) and (min-height : 800px){
 
     * {
         font-size: 18px;
@@ -405,7 +405,7 @@ blockquote:after {
         "project_box_image project_box_info"
         "technology_and_code project_box_info";
         grid-column-gap: 2%;
-        margin-top: 0;
+        margin-top: 10px;
     }
 
     .project_box_image {
@@ -414,6 +414,7 @@ blockquote:after {
 
     .project_box_info {
         grid-area: project_box_info;
+        margin-top: 1em;
     }
     .technology_and_code {
         grid-area: technology_and_code;
@@ -425,4 +426,36 @@ blockquote:after {
 }
 
 @media only screen and (min-width : 1824px){
+
+    * {
+        font-size: 24px;
+    }
+
+    .project_box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "project_box_image technology_and_code"
+        "project_box_image project_box_info"
+        "project_box_image project_box_info"
+        "project_box_image project_box_info";
+        grid-column-gap: 2%;
+    }
+
+    .project_box_image {
+        grid-area: project_box_image;
+    }
+
+    .project_box_info {
+        grid-area: project_box_info;
+        margin-top: 1.5em;
+    }
+    .technology_and_code {
+        grid-area: technology_and_code;
+    }
+
+    .project_improvements {
+        text-indent: 5%;
+    }
 }
