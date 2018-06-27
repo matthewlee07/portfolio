@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="tabs.css">
     <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Questrial+Spirax|Roboto+Slab" rel="stylesheet">
@@ -345,8 +346,17 @@
         </div>
     </div>
 
-    <div id="about_container">
-        <section id="who">
+    <div id="about">
+        <input id="tab1" type="radio" name="tabs">
+        <label for="tab1"></label>
+
+        <input id="tab2" type="radio" name="tabs" checked>
+        <label for="tab2"></label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3"></label>
+
+        <section id="content1">
             <h2>Who is Matt Lee?</h2>
             <p>My internships at companies and projects such as
                 <a href="http://www.lorealusa.com/" target="_blank" class="link">L'Oréal</a>,
@@ -359,9 +369,10 @@
                 about my pursuits and thrust my enirety into my goals.
             </p>
             <p> My attitude and character carry over into my journey as a developer.</p>
+
         </section>
 
-        <section id="why">
+        <section id="content2">
             <h2>Intro. to Programming</h2>
             <p>There was a matchmaker, Facebook Ads, who first introduced me to programming. It was an advertisement for one
                 of the many programming bootcamps.
@@ -384,9 +395,11 @@
                 has been unveiled, yet it still amazes me that so much can be built with some logic, coffee, and a lot of
                 <a href="https://stackoverflow.com/tour" target="_blank" class="link">Stack Overflow</a>.
             </p>
+
         </section>
-        <section id="misc">
-            <h2>Miscellaneous</h2>
+
+        <section id="content3">
+            <h2>Hobbies</h2>
             <div class="photo_carousel">
                 <img src="./travel/scuba-diver.jpg" alt="Diving">
                 <img src="./travel/flying.jpg" alt="Flying">
