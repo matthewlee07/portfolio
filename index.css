@@ -372,9 +372,6 @@ blockquote:after {
     * {
         font-size: 18px;
     }
-    header {
-        padding: 2%;
-    }
 
     #greetings p {
         font-size: 2.5em;
