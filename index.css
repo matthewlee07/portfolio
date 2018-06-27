@@ -459,3 +459,10 @@ blockquote:after {
         text-indent: 5%;
     }
 }
+
+@media only screen and (min-width : 1824px){
+    header {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
