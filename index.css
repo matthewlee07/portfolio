@@ -405,6 +405,7 @@ blockquote:after {
         "project_box_image project_box_info"
         "technology_and_code project_box_info";
         grid-column-gap: 2%;
+        margin-top: 0;
     }
 
     .project_box_image {
