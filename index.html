@@ -35,6 +35,11 @@
                         <i class="fa fa-at" aria-hidden="true"></i>
                     </a>
                 </li>
+                <li class="contact-link contact-link-medium">
+                    <a target="_blank" href="https://medium.com/@devmattlee">
+                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    </a>
+                </li>
             </ul>
         </nav>
 
@@ -60,6 +65,11 @@
                         <li class="contact-link contact-link-email">
                             <a target="_blank" href="mailto:thematthewalee@gmail.com" class="email-link">
                                 <i class="fa fa-at" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="contact-link contact-link-medium">
+                            <a target="_blank" href="https://medium.com/@devmattlee">
+                                <i class="fa fa-medium" aria-hidden="true"></i>
                             </a>
                         </li>
                     </ul>
@@ -200,12 +210,9 @@
                     <p> Initially wrote server-side code for SQLite - was functional locally, but learned about development versus
                         production environment. </p>
                     <p>
-                        Original board game data from
-                        <a href="https://www.kaggle.com/gabrio/board-games-dataset" target="_blank"> this</a> SQLite database is not supported by Heroku. Dumped data into PostrgreSQL for compatibility.
-                        Discovered Heroku supports up to 10,000 rows for free; Boardgame Binder has over 90,000 rows.
-                    </p>
-                    <p>Migrated data to
-                        <a href="https://aws.amazon.com/rds/" target="_blank"> AWS RDS</a> for hosting.
+                        <a href="https://medium.com/@devmattlee/exporting-10-000-sqlite-rows-to-heroku-c87c3e839cb4">Medium Post</a> reflecting export of 10,000+ SQLite rows to Heroku using PostgreSQL and
+                        <a href="https://aws.amazon.com/rds/"
+                            target="_blank"> AWS RDS</a>.
                     </p>
                     <p>
                         Will try Docker and better architecture in future projects.
