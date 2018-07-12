@@ -189,6 +189,18 @@
                             <img src="./logos/aws-rds.svg" alt="AWS Relational Database Service icon">
                         </div>
                     </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Mocha</span>
+                            <img src="./logos/mocha.svg" alt="Mocha icon">
+                        </div>
+                    </div>
+                    <div class="technology-icon">
+                        <div class='tooltip'>
+                            <span class='tooltiptext'>Chai</span>
+                            <img src="./logos/chai.svg" alt="Chai icon">
+                        </div>
+                    </div>
                 </div>
                 <a href="https://github.com/matthewlee07/boardgameProfile" target="_blank">Server Code</a>
                 <span>|</span>
@@ -198,8 +210,8 @@
             <div class="project_box_info">
                 <div class="tab">
                     <button class="tablinks" onclick="openInfo(event, 'How_Boardgame')">How to use app</button>
-                    <button class="tablinks" onclick="openInfo(event, 'Server_Boardgame')" disabled>Server-side</button>
-                    <button class="tablinks" onclick="openInfo(event, 'Client_Boardgame')" disabled>Client-side</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Server_Boardgame')">Server-side</button>
+                    <button class="tablinks" onclick="openInfo(event, 'Client_Boardgame')">Client-side</button>
                     <button class="tablinks" onclick="openInfo(event, 'Lessons_Boardgame')">Lessons and difficulties</button>
                     <button class="tablinks" onclick="openInfo(event, 'Improvements_Boardgame')">Ongoing improvements</button>
                 </div>
@@ -209,11 +221,13 @@
                 </div>
                 <div id="Server_Boardgame" class="tabcontent">
                     <a href="https://github.com/matthewlee07/boardgameProfile" target="_blank">Server Code</a>
-                    <p>Built RESTful API</p>
+                    <p>Built RESTful API with CRUD</p>
+                    <p>PostgreSQL database with many:1 and a many:many tables</p>
+                    <p>Unit tests with Mocha + Chai</p>
                 </div>
                 <div id="Client_Boardgame" class="tabcontent">
                     <a href="https://github.com/matthewlee07/BoardgameFinder-Client" target="_blank">Client Code</a>
-                    <p>Angular</p>
+                    <p>Angular (5+)</p>
                 </div>
                 <div id="Lessons_Boardgame" class="tabcontent">
                     <p> Initially wrote server-side code for SQLite - was functional locally, but learned about development versus
@@ -229,7 +243,6 @@
 
                 <div id="Improvements_Boardgame" class="tabcontent">
                     <ul class="project_improvements">
-                        <li>Unit Tests (Mocha, Chai, Jasmine, Karma etc).</li>
                         <li>Loading screen (slow because free services).</li>
                         <li>Email, signup & social media integration.</li>
                         <li>Instructions on landing page.</li>
@@ -260,13 +273,12 @@
                             <img src="./logos/jquery.svg" alt="jQuery icon">
                         </div>
                     </div>
-                </div>1
+                </div>
                 <a href="https://github.com/matthewlee07/theMovieDatabaseAPI" target="_blank">View Code</a>
             </div>
             <div class="project_box_info">
                 <div class="tab">
                     <button class="tablinks" onclick="openInfo(event, 'How_Film')">How to use app</button>
-                    <button class="tablinks" onclick="openInfo(event, 'Back_Boardgame')" disabled>Development</button>
                     <button class="tablinks" onclick="openInfo(event, 'Lessons_Film')">Lessons and difficulties</button>
                     <button class="tablinks" onclick="openInfo(event, 'Improvements_Film')">Ongoing improvements</button>
                 </div>
