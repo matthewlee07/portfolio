@@ -581,6 +581,7 @@
             >Client Code</a
           >
         </div>
+        <!-- about the code -->
         <div class="project_box_info">
           <div class="tab">
             <button
@@ -589,7 +590,18 @@
             >
               How to use app
             </button>
-            <!-- about the code -->
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'Server_MealWithMe')"
+            >
+              Server-side
+            </button>
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'Client_MealWithMe')"
+            >
+              Client-side
+            </button>
             <button
               class="tablinks"
               onclick="openInfo(event, 'Lessons_MealWithMe')"
@@ -609,13 +621,30 @@
               with new people.
             </p>
           </div>
-          <!-- about the code -->
-          <div id="Lessons_MealWithMe" class="tabcontent">
-            <p>Learned React Hooks, TDD with Rspec, and ATDD with Cypress io</p>
+          <div id="Server_MealWithMe" class="tabcontent">
+            <a
+              href="https://github.com/matthewlee07/MealWithMe/tree/master/server"
+              target="_blank"
+              >Server Code</a
+            >
+            <p>Built RESTful API with CRUD</p>
+            <p>TDD with Rspec</p>
           </div>
+          <div id="Client_MealWithMe" class="tabcontent">
+            <a
+              href="https://github.com/matthewlee07/MealWithMe/tree/master/client"
+              target="_blank"
+              >Client Code</a
+            >
+            <p>Learned React Hooks and ATDD with Cypress io</p>
+          </div>
+          <div id="Lessons_MealWithMe" class="tabcontent">
+            In development...
+          </div>
+
           <div id="Improvements_MealWithMe" class="tabcontent">
             <ul class="project_improvements">
-              <li>Still in development</li>
+              <li>In development...</li>
             </ul>
           </div>
         </div>
