@@ -20,7 +20,7 @@
   <body>
     <div class="landing_page">
       <nav class="nav-bar" id="nav-bar">
-        <h1 class="name-nav">Matt Lee</h1>
+        <h3 class="name-nav">Matt Lee</h3>
         <ul class="contact-nav">
           <li class="contact-link contact-link-github">
             <a target="_blank" href="https://www.github.com/matthewlee07">
@@ -106,20 +106,20 @@
             </div>
             <div class="technology-icon">
               <div class="tooltip">
-                <span class="tooltiptext">Express</span>
-                <img src="./logos/express.svg" alt="Express icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Ruby</span>
-                <img src="./logos/ruby.svg" alt="Ruby icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
                 <span class="tooltiptext">Rails</span>
                 <img src="./logos/rails.svg" alt="Rails icon" />
+              </div>
+            </div>
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">React</span>
+                <img src="./logos/react.svg" alt="React icon" />
+              </div>
+            </div>
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">Angular</span>
+                <img src="./logos/angular.svg" alt="Angular icon" />
               </div>
             </div>
             <div class="technology-icon">
@@ -152,9 +152,83 @@
     </div>
     <div id="projects_container">
       <h2>My Projects</h2>
-      <hr />
+      <!-- Reserve-Room App  -->
+      <div class="project_box">
+        <h3 class="project-title">App: Reserve A Room</h3>
+        <div class="project_box_image">
+          <a href="https://react-reserve-room.netlify.com/" target="_blank">
+            <img
+              src="./screenshots/Reserve-Room.jpg"
+              alt="Reserve-Room App screenshot"
+              class="screenshot"
+            />
+          </a>
+          <p>
+            <a href="https://react-reserve-room.netlify.com/" target="_blank"
+              >Live Demo</a
+            >
+          </p>
+        </div>
+        <div class="technology_and_code">
+          <p>Technologies used:</p>
+          <div class="technologies-container">
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">React</span>
+                <img src="./logos/react.svg" alt="React icon" />
+              </div>
+            </div>
+            <a
+              href="https://github.com/matthewlee07/Reserve-Room"
+              target="_blank"
+              >View Code</a
+            >
+          </div>
+          <div class="project_box_info">
+            <div class="tab">
+              <button
+                class="tablinks"
+                onclick="openInfo(event, 'How_Reserve_Room')"
+              >
+                How to use app
+              </button>
+              <!-- about the code -->
+              <button
+                class="tablinks"
+                onclick="openInfo(event, 'Lessons_Reserve_Room')"
+              >
+                Lessons and difficulties
+              </button>
+              <button
+                class="tablinks"
+                onclick="openInfo(event, 'Improvements_Reserve_Room')"
+              >
+                Ongoing improvements
+              </button>
+            </div>
+            <div id="How_Reserve_Room" class="tabcontent">
+              <p>
+                Find your perfect room with filters such as size, price, and
+                pets.
+              </p>
+            </div>
+            <!-- about the code -->
+            <div id="Lessons_Reserve_Room" class="tabcontent">
+              <p>Purpose of app is to play with React Hooks and Context API</p>
+            </div>
+            <div id="Improvements_Reserve_Room" class="tabcontent">
+              <ul class="project_improvements">
+                <p>
+                  Purpose of app is to play with React Hooks and Context API
+                </p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Kaizen-Liftz App  -->
       <div class="project_box">
+        <h3 class="project-title">App: Kaizen-Liftz</h3>
         <div class="project_box_image">
           <a href="https://kaizen-liftz.herokuapp.com/" target="_blank">
             <img
@@ -230,9 +304,9 @@
           </div>
         </div>
       </div>
-      <hr />
       <!-- Boardgame Binder -->
       <div class="project_box">
+        <h3 class="project-title">App: Boardgame Binder</h3>
         <div class="project_box_image">
           <a
             href="http://boardgame-binder-client.herokuapp.com/home"
@@ -267,19 +341,7 @@
             </div>
             <div class="technology-icon">
               <div class="tooltip">
-                <span class="tooltiptext">SQLite</span>
-                <img src="./logos/sqlite.svg" alt="SQLite icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Sequelize</span>
-                <img src="./logos/sequelize.svg" alt="Sequelize icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">PostgreSQL & pgAdmin</span>
+                <span class="tooltiptext">PostgreSQL</span>
                 <img src="./logos/postgresql.svg" alt="PostgreSQL icon" />
               </div>
             </div>
@@ -404,9 +466,9 @@
           </div>
         </div>
       </div>
-      <hr />
       <!-- Find Your Film -->
       <div class="project_box">
+        <h3 class="project-title">App: Find Your Film</h3>
         <div class="project_box_image">
           <a
             href="https://matthewlee07.github.io/theMovieDatabaseAPI/"
@@ -475,15 +537,21 @@
           </div>
         </div>
       </div>
-      <hr />
-      <!-- Travel Battle -->
+      <h2>In Development</h2>
+      <!-- MealWithMe -->
       <div class="project_box">
-        <div class="project_box_image" id="under_construction">
-          <img
-            src="./screenshots/under-construction.jpg"
-            alt="Travel Battle screenshot"
-            class="screenshot under-construction"
-          />
+        <h3 class="project-title">App: MealWithMe</h3>
+        <div class="project_box_image">
+          <a href="" target="_blank">
+            <img
+              src="./screenshots/MealWithMe.jpg"
+              alt="MealWithMe App screenshot"
+              class="screenshot"
+            />
+          </a>
+          <p>
+            <a href="" target="_blank">In Development</a>
+          </p>
         </div>
         <div class="technology_and_code">
           <p>Technologies used:</p>
@@ -496,94 +564,58 @@
             </div>
             <div class="technology-icon">
               <div class="tooltip">
-                <span class="tooltiptext">Redux</span>
-                <img src="./logos/redux.svg" alt="Redux icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Mongo</span>
-                <img src="./logos/mongodb.svg" alt="Mongo icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Mongo Lab</span>
-                <img src="./logos/mongolab.svg" alt="Mongo Lab icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Docker</span>
-                <img src="./logos/docker.svg" alt="Docker icon" />
-              </div>
-            </div>
-            <div class="technology-icon">
-              <div class="tooltip">
-                <span class="tooltiptext">Netlify</span>
-                <img src="./logos/netlify.svg" alt="Netlify icon" />
+                <span class="tooltiptext">Rails</span>
+                <img src="./logos/rails.svg" alt="Rails icon" />
               </div>
             </div>
           </div>
           <a
-            href="https://github.com/matthewlee07/Travel-Battle-Server"
+            href="https://github.com/matthewlee07/MealWithMe/tree/master/server"
             target="_blank"
             >Server Code</a
           >
           <span>|</span>
           <a
-            href="https://github.com/matthewlee07/Travel-Battle"
+            href="https://github.com/matthewlee07/MealWithMe/tree/master/client"
             target="_blank"
             >Client Code</a
           >
         </div>
         <div class="project_box_info">
           <div class="tab">
-            <button class="tablinks" onclick="openInfo(event, 'How_Travel')">
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'How_MealWithMe')"
+            >
               How to use app
             </button>
+            <!-- about the code -->
             <button
               class="tablinks"
-              onclick="openInfo(event, 'Back_Boardgame')"
-              disabled
-            >
-              Server-side
-            </button>
-            <button
-              class="tablinks"
-              onclick="openInfo(event, 'Front_Boardgame')"
-              disabled
-            >
-              Client-side
-            </button>
-            <button
-              class="tablinks"
-              onclick="openInfo(event, 'Lessons_Travel')"
-              disabled
+              onclick="openInfo(event, 'Lessons_MealWithMe')"
             >
               Lessons and difficulties
             </button>
             <button
               class="tablinks"
-              onclick="openInfo(event, 'Improvements_Travel')"
-              disabled
+              onclick="openInfo(event, 'Improvements_MealWithMe')"
             >
               Ongoing improvements
             </button>
           </div>
-          <div id="How_Travel" class="tabcontent">
+          <div id="How_MealWithMe" class="tabcontent">
             <p>
-              User submits RFP with travel details. Travel agents bid to fill
-              request for lower price.
+              Users start or join an interest list for a restaurant and dine
+              with new people.
             </p>
-            <p>"Reverse eBay for travel"</p>
           </div>
-          <div id="Lessons_Travel" class="tabcontent">
-            <p>In progress</p>
+          <!-- about the code -->
+          <div id="Lessons_MealWithMe" class="tabcontent">
+            <p>Learned React Hooks, TDD with Rspec, and ATDD with Cypress io</p>
           </div>
-          <div id="Improvements_Travel" class="tabcontent">
+          <div id="Improvements_MealWithMe" class="tabcontent">
             <ul class="project_improvements">
-              <li>In progress</li>
+              <li>Still in development</li>
             </ul>
           </div>
         </div>

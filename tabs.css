@@ -21,7 +21,6 @@ p {
   line-height: 2em;
 }
 
-
 section {
   display: none;
   padding: 20px 0 0;
@@ -48,9 +47,15 @@ label:before {
   margin-right: 10px;
 }
 
-label[for*='1']:before { content: '\f007'; }
-label[for*='2']:before { content: '\f11c'; }
-label[for*='3']:before { content: '\f072'; }
+label[for*="1"]:before {
+  content: "\f007";
+}
+label[for*="2"]:before {
+  content: "\f11c";
+}
+label[for*="3"]:before {
+  content: "\f072";
+}
 
 label:hover {
   color: #888;
@@ -89,6 +94,6 @@ input:checked + label {
 
 @media screen and (min-width: 1024px) {
   #about {
-   margin-top: 0px;
+    margin-top: 0px;
   }
 }
