@@ -152,6 +152,91 @@
     </div>
     <div id="projects_container">
       <h2>My Projects</h2>
+      <!-- Sample-Store App  -->
+      <h3 class="project-title">App: Sample-Store</h3>
+      <div class="project_box">
+        <div class="project_box_image">
+          <a href="https://react-sample-store.herokuapp.com/" target="_blank">
+            <img
+              src="./screenshots/Sample-Store.jpg"
+              alt="Sample-Store App screenshot"
+              class="screenshot"
+            />
+          </a>
+          <p>
+            <a href="https://react-sample-store.herokuapp.com/" target="_blank"
+              >Live Demo</a
+            >
+          </p>
+        </div>
+        <div class="technology_and_code">
+          <p>Technologies used:</p>
+          <div class="technologies-container">
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">React</span>
+                <img src="./logos/react.svg" alt="React icon" />
+              </div>
+            </div>
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">Redux</span>
+                <img src="./logos/redux.svg" alt="Redux icon" />
+              </div>
+            </div>
+            <div class="technology-icon">
+              <div class="tooltip">
+                <span class="tooltiptext">Firebase</span>
+                <img src="./logos/firebase.svg" alt="Firebase icon" />
+              </div>
+            </div>
+          </div>
+          <a href="https://github.com/matthewlee07/sample-store" target="_blank"
+            >View Code</a
+          >
+        </div>
+        <div class="project_box_info">
+          <div class="tab">
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'How_Sample_Store')"
+            >
+              How to use app
+            </button>
+            <!-- about the code -->
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'Lessons_Sample_Store')"
+            >
+              Lessons and difficulties
+            </button>
+            <button
+              class="tablinks"
+              onclick="openInfo(event, 'Improvements_Sample_Store')"
+            >
+              Ongoing improvements
+            </button>
+          </div>
+          <div id="How_Sample_Store" class="tabcontent">
+            <p>
+              Users can shop for apparel.
+            </p>
+            <p>
+              Login with email or Google authentication to track your shopping
+              cart.
+            </p>
+            <p>Payments through Stripe.</p>
+          </div>
+          <!-- about the code -->
+          <div id="Lessons_Sample_Store" class="tabcontent">
+            State management with Redux
+          </div>
+          <div id="Improvements_Sample_Store" class="tabcontent">
+            Integrate more async functions with Redux
+          </div>
+        </div>
+      </div>
+
       <!-- Reserve-Room App  -->
       <h3 class="project-title">App: Reserve A Room</h3>
       <div class="project_box">

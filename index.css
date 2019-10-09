@@ -8,7 +8,9 @@
 }
 
 header {
+  height: 100vh;
   padding: 2%;
+  margin-top: 20%;
 }
 
 #greetings p {
